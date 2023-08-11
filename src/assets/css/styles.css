@@ -86,7 +86,7 @@ body {
     padding: 0;
     line-height: 1.5;
     background-color: var(--white);
-    color: var(--dark-navy, --dim-grey);
+    color: var(--black);
     overflow-x: hidden;
 }
 

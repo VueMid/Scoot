@@ -9,18 +9,18 @@ export default {
       colors: {
         'white': '#FFFFFF',
         'black': '#000000',
-        'dark-grey': '#333A44',
         'darker-yellow': '#FCB72B',
         'dark-navy': '#495567',
         'dim-grey': '#939CAA',
-        'light-grey': '#E5ECF4',
+        'light grey': '#E5ECF4',
         'snow': '#F2F5F9',
         'light-yellow': '#FFF4DF',
+        'dark-grey': '#333A44',
       }
     },
     container: {
       center: true,
-      padding: '80px',
+      padding: '40px',
       screens: {
         'sm': '640px',
         'md': '768px',
