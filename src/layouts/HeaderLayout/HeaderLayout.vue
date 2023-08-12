@@ -26,11 +26,18 @@ export default {
 }
 </script>
 <style lang="scss">
+@media(max-width: 820px) {
+    .header {
+        box-shadow: rgba(252, 183, 43) 0px 2px 8px 0px;
+    }
+}
+
 @media(max-width:700px) {
     .header {
         transition: 0.2s;
 
         &.scrolled {
+            box-shadow: none;
             background-color: inherit;
             z-index: 1001;
             backdrop-filter: blur(5px);
