@@ -79,6 +79,7 @@ export default {
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+   
 
         ::after {
             transform: rotate(180deg);

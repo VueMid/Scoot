@@ -6,9 +6,9 @@
 </template>
 <script>
 import HeroSection from './HomeSections/HeroSection.vue';
-import ScoooterSection from './HomeSections/ScooterSection.vue';
+import ScooterSection from './HomeSections/ScooterSection.vue';
 export default {
-    components: { HeroSection, ScoooterSection }
+    components: { HeroSection, ScooterSection, ScooterSection }
 }
 </script>
 <style></style  >

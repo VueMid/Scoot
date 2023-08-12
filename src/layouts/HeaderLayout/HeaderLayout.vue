@@ -1,5 +1,5 @@
 <template>
-    <header class="heade fixed z-50 bg-white w-full lg:static">
+    <header class="header    fixed z-50 bg-white w-full lg:static">
         <div class="container px-8 py-[22px] md:px-10 flex justify-between items-center">
             <HeaderLogo />
             <HeaderNavbar />
@@ -12,25 +12,29 @@ import HeaderLogo from './components/HeaderLogo.vue';
 import HeaderNavbar from './components/HeaderNavbar.vue';
 import HeaderButton from './components/HeaderButton.vue';
 export default {
-    components: { HeaderLogo, HeaderNavbar, HeaderButton }
+    components: { HeaderLogo, HeaderNavbar, HeaderButton },
+    mounted() {
+        window.addEventListener("scroll", () => {
+            console.log(window);
+            if (window.pageYOffset > 0) {
+                document.querySelector(".header")?.classList.add("scrolled");
+            } else {
+                document.querySelector(".header")?.classList.remove("scrolled");
+            }
+        });
+    }
 }
 </script>
 <style lang="scss">
-@media(max-width: 820px) {
+@media(max-width:700px) {
     .header {
-        box-shadow: rgba(252, 183, 43) 0px 1px 3px, rgba(252, 183, 43) 0px 1px 2px;
-    }
-}
+        transition: 0.2s;
 
-@media(max-width: 768px) {
-    .header {
-        box-shadow: rgba(252, 183, 43) 0px 1px 3px, rgba(252, 183, 43) 0px 1px 2px;
-    }
-}
-
-@media(max-width: 700px) {
-    .header {
-        box-shadow: rgba(252, 183, 43) 0px 1px 3px, rgba(252, 183, 43) 0px 1px 2px;
+        &.scrolled {
+            background-color: inherit;
+            z-index: 1001;
+            backdrop-filter: blur(5px);
+        }
     }
 }
 </style>
