@@ -1,31 +1,26 @@
 <template>
-    <section class="easy ">
-        <div
-            class="container easy__container mt-[120px] flex flex-col justify-center items-center md:mt-[145px] lg:flex lg:flex-row-reverse lg:justify-between lg:items-center">
-            <img class="easy__image rounded-[50%] md:w-[445px]" src="@/assets/images/guy__holding-phone.png"
-                alt="guy__holding-phone" width="311" height="311">
-            <div class="easy__box flex flex-col justify-center items-center lg:flex lg:flex-col lg:items-start">
-                <TheTitle
-                    class="easy__title text-dark-navy w-[311px] text-[31px] font-bold mt-[56px] leading-8 md:w-[549px] md:leading-[48px] lg:mt-[0] lg:leading-[56px]">
+    <section class="easy">
+        <div class="container easy__container flex flex-col justify-center items-center mt-[120px]">
+            <img class="easy__image rounded-[50%] w-[311px] md:w-[445px]" src="@/assets/images/guy__holding-phone.png"
+                alt="guy__holding-phone">
+            <div class="easy__box flex flex-col justify-center items-center">
+                <h3 class="easy__title w-[314px] text-dark-navy text-center text-[32px] font-bold leading-8 mt-8">
                     Easy to use riding telemetry
-                </TheTitle>
-                <TheText
-                    class="easy__text text-[15px] font-normal leading-[25px] mt-8 md:mt-10 md:w-[573px] md:leading-[25px] lg:mt-6 lg:w-[445px]">
+                </h3>
+                <p class="easy__text w-[311px] text-dim-grey text-center text-[15px] font-normal leading-[25px] mt-8">
                     The Scoot app is available with riding telemetry. This means it can show you your average speed, how
                     long you've been using the scooter, your traveling distance, and many more things all in an easy to use
                     app.
-                </TheText>
-                <TheButton class="easy__button mt-8 md:mt-10">Learn More</TheButton>
+                </p>
+                <TheButton class="easy__button mt-8">Learn More</TheButton>
             </div>
         </div>
     </section>
 </template>
 <script>
 import TheButton from '../../../MaterialUI/TheButton.vue';
-import TheText from '../../../MaterialUI/TheText.vue';
-import TheTitle from '../../../MaterialUI/TheTitle.vue';
 export default {
-    components: { TheTitle, TheText, TheButton }
+    components: { TheButton }
 }
 </script>
 <style lang="scss">
@@ -57,7 +52,6 @@ export default {
     }
 
     &__text {
-        color: #939CAA !important;
         font-family: 'Lexend Deca';
     }
 }
@@ -89,11 +83,6 @@ export default {
             background-image: url('@/assets/icons/grey__circle-mask.svg');
             background-repeat: no-repeat;
         }
-
-        &__text {
-            color: #939CAA !important;
-            font-family: 'Lexend Deca';
-        }
     }
 }
 
@@ -123,11 +112,6 @@ export default {
             right: 0%;
             background-image: url('@/assets/icons/grey__circle-mask.svg');
             background-repeat: no-repeat;
-        }
-
-        &__text {
-            color: #939CAA !important;
-            font-family: 'Lexend Deca';
         }
     }
 }
