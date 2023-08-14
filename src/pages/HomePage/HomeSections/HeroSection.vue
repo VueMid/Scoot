@@ -16,7 +16,6 @@
         </div>
     </section>
 </template>
-
 <script>
 import TheTitleVue from '../../../MaterialUI/TheTitle.vue'
 import TheTextVue from '../../../MaterialUI/TheText.vue'
@@ -180,7 +179,7 @@ export default {
             display: inline-block;
             width: 452px;
             height: 151px;
-            top: 71%;
+            top: 69%;
             right: 66%;
             background-image: url('@/assets/icons/yellow__left-cursor-path.svg');
             background-repeat: no-repeat;
@@ -220,7 +219,7 @@ export default {
             display: inline-block;
             width: 452px;
             height: 151px;
-            top: 71%;
+            top: 69%;
             right: 66%;
             background-image: url('@/assets/icons/yellow__left-cursor-path.svg');
             background-repeat: no-repeat;
@@ -260,7 +259,7 @@ export default {
             display: inline-block;
             width: 452px;
             height: 151px;
-            top: 61%;
+            top: 70%;
             right: 66%;
             background-image: url('@/assets/icons/yellow__left-cursor-path.svg');
             background-repeat: no-repeat;
@@ -300,7 +299,7 @@ export default {
             display: inline-block;
             width: 452px;
             height: 151px;
-            top: 66%;
+            top: 70%;
             right: 66%;
             background-image: url('@/assets/icons/yellow__left-cursor-path.svg');
             background-repeat: no-repeat;

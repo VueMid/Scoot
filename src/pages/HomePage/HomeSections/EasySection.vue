@@ -6,7 +6,7 @@
                 alt="guy__holding-phone" width="311" height="311">
             <div class="easy__box flex flex-col justify-center items-center lg:flex lg:flex-col lg:items-start">
                 <TheTitle
-                    class="easy__title text-dark-navy w-[314px] text-[32px] font-bold mt-[56px] leading-8 md:w-[549px] md:leading-[48px] lg:mt-[0] lg:leading-[56px]">
+                    class="easy__title text-dark-navy w-[311px] text-[31px] font-bold mt-[56px] leading-8 md:w-[549px] md:leading-[48px] lg:mt-[0] lg:leading-[56px]">
                     Easy to use riding telemetry
                 </TheTitle>
                 <TheText
@@ -105,7 +105,7 @@ export default {
             position: absolute;
             content: '';
             display: inline-block;
-            width: 349px;
+            width: 325px;
             height: 151px;
             top: 22.5%;
             right: 0;
