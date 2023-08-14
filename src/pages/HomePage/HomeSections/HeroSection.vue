@@ -1,16 +1,20 @@
 <template>
     <section class="hero">
-        <div class="container hero__container flex flex-col justify-center items-center pt-[155px]">
-            <h2 class="hero__title w-[311px] text-center text-white text-[42px] font-bold leading-[46px]">
+        <div
+            class="container hero__container flex flex-col justify-center items-center pt-[155px] md:pt-[355px] lg:flex lg:flex-col lg:justify-center lg:items-start lg:pt-[123px]">
+            <h2
+                class="hero__title w-[311px] text-center text-white text-[42px] font-bold leading-[46px] md:w-[573px] md:text-[56px] md:leading-[56px] lg:w-[515px] lg:text-start">
                 Scooter sharing made simple
             </h2>
-            <div class="hero__mini-box flex flex-col justify-center items-center">
-                <p class="hero__text w-[311px] text-center text-white text-[15px] font-normal leading-[25px] mt-6">
+            <div
+                class="hero__mini-box flex flex-col justify-center items-center lg:flex lg:flex-col lg:justify-center lg:items-start lg:ml-[112px]">
+                <p
+                    class="hero__text w-[311px] text-center text-white text-[15px] font-normal leading-[25px] mt-6 md:w-[573px] lg:w-[405px] lg:text-start lg:mt-10">
                     Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of
                     our
                     cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!
                 </p>
-                <TheButtonVue class="hero__button mt-[34px]">Get Scootin</TheButtonVue>
+                <TheButtonVue class="hero__button mt-[34px] md:mt-8 lg:mt-10">Get Scootin</TheButtonVue>
             </div>
         </div>
     </section>
@@ -39,7 +43,7 @@ export default {
         display: inline-block;
         width: 203px;
         height: 16px;
-        top: 44%;
+        top: 49%;
         left: -2%;
         background-image: url('@/assets/icons/yellow__path.svg');
         background-repeat: no-repeat;
@@ -51,7 +55,7 @@ export default {
         display: inline-block;
         width: 452px;
         height: 151px;
-        top: 44%;
+        top: 49%;
         right: 16.5%;
         background-image: url('@/assets/icons/yellow__left-cursor-path.svg');
         background-repeat: no-repeat;
@@ -62,46 +66,47 @@ export default {
     }
 }
 
-// @media(max-width: 820px) {
-//     .hero {
-//         background-attachment: fixed;
-//         background-image: url('@/assets/images/hero__second-backround-image.jpg');
-//         background-position: top right;
-//         background-repeat: no-repeat;
-//         background-size: cover;
-//         position: relative;
+@media(max-width: 820px) {
+    .hero {
+        background-attachment: fixed;
+        background-image: url('@/assets/images/hero__second-backround-image.jpg');
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
 
 
-//         ::after {
-//             transform: rotate(180deg);
-//             position: absolute;
-//             content: '';
-//             display: inline-block;
-//             width: 768px;
-//             height: 141px;
-//             top: 6%;
-//             left: -10px;
-//             background-image: url('@/assets/icons/top__circles.svg');
-//             background-repeat: no-repeat;
-//         }
+        ::after {
+            transform: rotate(180deg);
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 768px;
+            height: 141px;
+            top: 6%;
+            left: -10px;
+            background-image: url('@/assets/icons/top__circles.svg');
+            background-repeat: no-repeat;
+        }
 
-//         ::before {
-//             position: absolute;
-//             content: '';
-//             display: inline-block;
-//             width: 452px;
-//             height: 151px;
-//             top: 69.5%;
-//             right: 58%;
-//             background-image: url('@/assets/icons/yellow__left-cursor-path.svg');
-//             background-repeat: no-repeat;
-//         }
+        ::before {
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 452px;
+            height: 151px;
+            top: 69.5%;
+            right: 58%;
+            background-image: url('@/assets/icons/yellow__left-cursor-path.svg');
+            background-repeat: no-repeat;
+        }
 
-//         &__mini-box {
-//             margin-left: 0 !important;
-//         }
-//     }
-// }
+        &__mini-box {
+            margin-left: 0 !important;
+        }
+    }
+}
 
 @media(max-width: 700px) {
     .hero {
@@ -132,7 +137,7 @@ export default {
             width: 140px;
             height: 151px;
             top: 74.5%;
-            left:0;
+            left: 0;
             background-image: url('@/assets/icons/yellow__short-cursor.svg');
             background-repeat: no-repeat;
         }
