@@ -6,7 +6,7 @@
                 alt="guy__holding-phone">
             <div class="easy__box flex flex-col justify-center items-center lg:flex-col lg:justify-center lg:items-start">
                 <h3
-                    class="easy__title w-[314px] text-dark-navy text-center text-[32px] font-bold leading-8 mt-8 md:w-[471px] md:text-5xl md:leading-[48px] md:mt-14 lg:w-[471px] lg:text-5xl lg:text-start lg:mt-0 lg:left-12">
+                    class="easy__title w-[314px] text-dark-navy text-center text-[32px] font-bold leading-8 mt-14 md:w-[471px] md:text-5xl md:leading-[48px] lg:w-[471px] lg:text-5xl lg:text-start lg:mt-0">
                     Easy to use riding telemetry
                 </h3>
                 <p

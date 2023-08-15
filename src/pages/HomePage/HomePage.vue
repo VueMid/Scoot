@@ -1,16 +1,20 @@
 <template>
-    <div class="home-page">
+    <div class="home__page">
         <HeroSection />
         <ScooterSection />
         <EasySection />
+        <CitySection />
+        <WalletSection />
     </div>
 </template>
 <script>
-import EasySection from './HomeSections/EasySection.vue';
 import HeroSection from './HomeSections/HeroSection.vue';
 import ScooterSection from './HomeSections/ScooterSection.vue';
+import EasySection from './HomeSections/EasySection.vue';
+import CitySection from './HomeSections/CitySection.vue';
+import WalletSection from './HomeSections/WalletSection.vue';
 export default {
-    components: { HeroSection, ScooterSection, ScooterSection, EasySection }
+    components: { HeroSection, ScooterSection, EasySection, CitySection, WalletSection }
 }
 </script>
 <style></style  >

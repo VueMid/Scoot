@@ -12,4 +12,3 @@ export default {
   components: { HeaderLayout, FooterLayout }
 }
 </script>
-<style></style>

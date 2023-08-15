@@ -1,5 +1,5 @@
 <template>
-    <header class="header    fixed z-50 bg-white w-full lg:static">
+    <header class="header fixed z-50 bg-white w-full lg:static">
         <div class="container px-8 py-[22px] md:px-10 flex justify-between items-center">
             <HeaderLogo />
             <HeaderNavbar />
@@ -12,7 +12,11 @@ import HeaderLogo from './components/HeaderLogo.vue';
 import HeaderNavbar from './components/HeaderNavbar.vue';
 import HeaderButton from './components/HeaderButton.vue';
 export default {
-    components: { HeaderLogo, HeaderNavbar, HeaderButton },
+    components: {
+        HeaderLogo,
+        HeaderNavbar,
+        HeaderButton
+    },
     mounted() {
         window.addEventListener("scroll", () => {
             console.log(window);
