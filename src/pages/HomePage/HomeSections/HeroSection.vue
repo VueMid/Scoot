@@ -109,6 +109,7 @@ export default {
         background-attachment: fixed;
         background-image: url('@/assets/images/hero__third-backround-image.png');
         background-repeat: no-repeat;
+        background-position: top right;
         background-size: contain;
         position: relative;
 
