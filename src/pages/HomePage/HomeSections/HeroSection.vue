@@ -1,7 +1,7 @@
 <template>
     <section class="hero">
         <div
-            class="container hero__container flex flex-col justify-center items-center pt-[175px] pb-[200px] md:pt-[355px] lg:flex lg:flex-col lg:justify-center lg:items-start lg:pt-[123px]">
+            class="container hero__container flex flex-col justify-center items-center pt-[120px] pb-[200px] md:pt-[355px] lg:flex lg:flex-col lg:justify-center lg:items-start lg:pt-[123px]">
             <h2
                 class="hero__title w-[311px] text-center text-white text-[42px] font-bold leading-[46px] md:w-[573px] md:text-[56px] md:leading-[56px] lg:w-[515px] lg:text-start">
                 Scooter sharing made simple
@@ -130,7 +130,7 @@ export default {
             display: inline-block;
             width: 140px;
             height: 151px;
-            top: 74.5%;
+            top: 65.5%;
             left: 0;
             background-image: url('@/assets/icons/yellow__short-cursor.svg');
             background-repeat: no-repeat;
