@@ -106,6 +106,7 @@ export default {
 
 @media(max-width: 700px) {
     .hero {
+        width: 100%;
         background-attachment: fixed;
         background-image: url('@/assets/images/hero__third-backround-image.png');
         background-repeat: no-repeat;
