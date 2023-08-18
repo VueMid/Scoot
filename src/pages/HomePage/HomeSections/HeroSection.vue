@@ -1,7 +1,7 @@
 <template>
     <section class="hero">
         <div
-            class="container hero__container flex flex-col justify-center items-center pt-[155px] md:pt-[355px] lg:flex lg:flex-col lg:justify-center lg:items-start lg:pt-[123px]">
+            class="container hero__container flex flex-col justify-center items-center pt-[175px] pb-[200px] md:pt-[355px] lg:flex lg:flex-col lg:justify-center lg:items-start lg:pt-[123px]">
             <h2
                 class="hero__title w-[311px] text-center text-white text-[42px] font-bold leading-[46px] md:w-[573px] md:text-[56px] md:leading-[56px] lg:w-[515px] lg:text-start">
                 Scooter sharing made simple
@@ -14,7 +14,7 @@
                     our
                     cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!
                 </p>
-                <TheButtonVue class="hero__button mt-[34px] md:mt-8 lg:mt-10">Get Scootin</TheButtonVue>
+                <TheButtonVue class="hero__button cursor-pointer mt-[34px] md:mt-8 lg:mt-10">Get Scootin</TheButtonVue>
             </div>
         </div>
     </section>
@@ -31,11 +31,9 @@ export default {
 .hero {
     background-attachment: fixed;
     background-image: url('@/assets/images/hero__backround-image.jpg');
-    background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    height: 100vh;
 
     ::after {
         position: absolute;
@@ -70,10 +68,8 @@ export default {
     .hero {
         background-attachment: fixed;
         background-image: url('@/assets/images/hero__second-backround-image.jpg');
-        background-position: top right;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 100vh;
         position: relative;
 
 
@@ -112,11 +108,9 @@ export default {
     .hero {
         background-attachment: fixed;
         background-image: url('@/assets/images/hero__third-backround-image.png');
-        background-position: top right;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         position: relative;
-        height: 100vh;
 
         ::after {
             position: absolute;

@@ -1,5 +1,5 @@
 <template>
-    <div class="home__page">
+    <div class="Home-page">
         <HeroSection />
         <ScooterSection />
         <EasySection />
