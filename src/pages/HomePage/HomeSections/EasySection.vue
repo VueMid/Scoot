@@ -43,6 +43,7 @@ export default {
     }
 
     ::before {
+        z-index: -1;
         position: absolute;
         content: '';
         display: inline-block;
@@ -76,6 +77,7 @@ export default {
         }
 
         ::before {
+            z-index: -1;
             position: absolute;
             content: '';
             display: inline-block;
@@ -106,6 +108,7 @@ export default {
         }
 
         ::before {
+            z-index: -1;
             position: absolute;
             content: '';
             display: none;

@@ -1,7 +1,7 @@
 <template>
     <section class="hero">
         <div
-            class="container hero__container flex flex-col justify-center items-center pt-[120px] pb-[200px] md:pt-[355px] lg:flex lg:flex-col lg:justify-center lg:items-start lg:pt-[123px]">
+            class="container hero__container flex flex-col justify-center items-center pt-[120px] pb-[200px] md:pt-[235px] lg:flex lg:flex-col lg:justify-center lg:items-start lg:pt-[123px]">
             <h2
                 class="hero__title w-[311px] text-center text-white text-[42px] font-bold leading-[46px] md:w-[573px] md:text-[56px] md:leading-[56px] lg:w-[515px] lg:text-start">
                 Scooter sharing made simple
@@ -66,11 +66,14 @@ export default {
 
 @media(max-width: 820px) {
     .hero {
+        width: 100% !important;
         background-attachment: fixed;
         background-image: url('@/assets/images/hero__second-backround-image.jpg');
         background-repeat: no-repeat;
+        background-position: top right;
         background-size: cover;
         position: relative;
+
 
 
         ::after {
@@ -92,7 +95,7 @@ export default {
             display: inline-block;
             width: 452px;
             height: 151px;
-            top: 69.5%;
+            top: 73%;
             right: 58%;
             background-image: url('@/assets/icons/yellow__left-cursor-path.svg');
             background-repeat: no-repeat;

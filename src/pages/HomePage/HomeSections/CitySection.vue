@@ -31,6 +31,7 @@ export default {
     position: relative;
 
     ::after {
+        z-index: -1;
         transform: rotate(180deg);
         position: absolute;
         content: '';
@@ -65,6 +66,7 @@ export default {
         position: relative;
 
         ::after {
+            z-index: -1;
             transform: rotate(180deg);
             position: absolute;
             content: '';
@@ -96,6 +98,7 @@ export default {
         position: relative;
 
         ::after {
+            z-index: -1;
             transform: rotate(180deg);
             position: absolute;
             content: '';
