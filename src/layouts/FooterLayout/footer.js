@@ -1,6 +1,6 @@
 export default [{
         name: 'About',
-        link: ''
+        link: '/about'
     },
     {
         name: 'Location',

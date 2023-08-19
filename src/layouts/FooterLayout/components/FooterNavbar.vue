@@ -4,7 +4,9 @@
             class="footer__list flex flex-col justify-center items-center gap-4 md:flex md:flex-row md:justify-center md:items-center md:gap-8">
             <li class="footer__lists text-dim-grey text-[15px] font-bold leading-[25px] cursor-pointer active:text-darker-yellow lg:hover:text-darker-yellow"
                 v-for="item in itemList" :key="item">
-                {{ item.name }}
+                <router-link :to="item.link">
+                    {{ item.name }}
+                </router-link>
             </li>
         </ul>
     </nav>
