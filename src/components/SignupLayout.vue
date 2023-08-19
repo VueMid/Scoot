@@ -3,7 +3,7 @@
         <div
             class="container signup__container flex flex-col justify-center items-center gap-10 py-[88px] mt-[120px] md:py-[62px] md:mt-[104px] lg:flex lg:flex-row lg:justify-between lg:items-center lg:mt-[180px] lg:py-[102px]">
             <h3
-                class="signup__title w-[333px] text-white text-center text-[32px] font-bold leading-8 tracking-[-2.429px] md:w-[457px] md:text-5xl md:leading-[48px] md:tracking-[-2.143px] md:text-start">
+                class="signup__title w-[333px] text-white text-center text-[32px] font-bold leading-8 tracking-[-2.429px] md:w-[457px] md:text-5xl md:leading-[48px] md:tracking-[-2.143px] md:text-center lg:text-start">
                 Sign up and Scoot off today
             </h3>
             <div class="signup__box-icons flex flex-row justify-center items-center gap-3">

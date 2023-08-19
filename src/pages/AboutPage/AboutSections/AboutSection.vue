@@ -1,9 +1,9 @@
 <template>
     <section class="about">
         <div
-            class="container about__container flex justify-center items-center md:flex md:flex-row md:justify-start md:items-center pt-[106px] pb-[86px] md:pt-[172px] md:pb-[162px]">
+            class="container about__container flex justify-center items-center md:flex md:flex-row md:justify-start md:items-center pt-[106px] pb-[86px] md:pt-[172px] md:pb-[162px] lg:pt-[0] lg:pb-0">
             <h2
-                class="about__text text-center text-white font-bold w-[311px] text-[40px] leading-10 tracking-[-1.786px] md:w-[162px] md:text-[56px] md:leading-[56px] md:tracking-[-2.5px] md:py-[0px]">
+                class="about__text text-center text-white font-bold w-[311px] text-[40px] leading-10 tracking-[-1.786px] md:w-[162px] md:text-[56px] md:leading-[56px] md:tracking-[-2.5px] md:py-[0px] lg:py-[72px]">
                 About
             </h2>
         </div>
