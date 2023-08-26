@@ -4,6 +4,7 @@
     <RouterView />
     <SignupLayout />
     <FooterLayout />
+
   </main>
 </template>
 <script>
