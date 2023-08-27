@@ -15,18 +15,54 @@
                     long you've been using the scooter, your traveling distance, and many more things all in an easy to use
                     app.
                 </p>
-                <TheButton class="easy__button mt-8 md:mt-10">Learn More</TheButton>
+                <TheButton class="easy__button mt-8 md:mt-10" data-modal-target="staticModal"
+                    data-modal-toggle="staticModal" type="button" @click="openModal">
+                    Learn More
+                </TheButton>
             </div>
         </div>
     </section>
+    <!-- Modal -->
+    <Transition name="modal">
+        <div class="easy__main-modal" v-if="isModalOpened">
+            <EasyComponentVue @closeModal="closeModal" />
+        </div>
+    </Transition>
 </template>
 <script>
 import TheButton from '../../../MaterialUI/TheButton.vue';
+import EasyComponentVue from '../components/EasyComponent.vue';
 export default {
-    components: { TheButton }
+    data() {
+        return {
+            isModalOpened: false
+        }
+    },
+    methods: {
+        openModal(idx) {
+            this.isModalOpened = true;
+        },
+        closeModal() {
+            this.isModalOpened = false;
+        },
+    },
+    components: {
+        TheButton,
+        EasyComponentVue
+    }
 }
 </script>
 <style lang="scss">
+.modal-enter-active,
+.modal-leave-active {
+    transition: 0.3s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+    opacity: 0;
+}
+
 .easy {
     position: relative;
 
