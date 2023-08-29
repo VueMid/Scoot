@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="toogleDark()" class="w-5">
+        <button @click="toogleDark()" class="w-5 hidden md:block">
             <i v-if="isDark" class="fa-solid fa-sun fa-2xl cursor-pointer" style="color: #FCB72B;"></i>
             <i v-else class="fa-solid fa-moon fa-2xl cursor-pointer" style="color: #FCB72B;"></i>
         </button>

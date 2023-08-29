@@ -1,5 +1,5 @@
 <template>
-    <section class="scooter">
+    <section class="scoote">
         <div
             class="container scooter__container flex flex-col justify-center items-center gap-12 pt-[120px] md:flex-col md:justify-center md:items-center md:pt-[122px] md:gap-10 lg:flex lg:flex-row lg:justify-between lg:items-center lg:gap-0">
             <div
