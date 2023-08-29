@@ -1,5 +1,5 @@
 <template>
-    <div class="Home-page">
+    <div class="Home-page dark:bg-tailwind-dark">
         <HeroSection />
         <ScooterSection />
         <EasySection />

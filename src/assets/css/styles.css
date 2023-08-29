@@ -3,7 +3,7 @@
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var(--dark-navy);
+    background-color: var(--dim-grey);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -90,13 +90,24 @@ body {
     overflow-x: hidden;
 }
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+.scrollup {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    right: 1rem;
+    bottom: 20%;
+    background-color: #939CAA;
+    padding: 0 .3rem;
+    border-radius: .4rem;
+    z-index: 211;
+    transform: scale(0);
+    transition: .4s;
+}
+
+.show-scroll {
+    bottom: 5rem;
+    transform: scale(1);
 }

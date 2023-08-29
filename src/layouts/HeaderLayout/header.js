@@ -4,10 +4,10 @@ export default [{
     },
     {
         name: 'Location',
-        link: ''
+        link: '/location'
     },
     {
         name: 'Careers',
-        link: ''
+        link: '/careers'
     },
 ]

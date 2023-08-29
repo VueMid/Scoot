@@ -1,5 +1,5 @@
 <template>
-    <header class="header fixed z-50 bg-white w-full lg:static">
+    <header class="header fixed z-50 bg-white w-full lg:static dark:bg-tailwind-dark">
         <div class="container px-8 py-[22px] md:px-10 flex justify-between items-center">
             <HeaderLogo />
             <HeaderNavbar />
@@ -15,7 +15,7 @@ export default {
     components: {
         HeaderLogo,
         HeaderNavbar,
-        HeaderButton
+        HeaderButton,
     },
     mounted() {
         window.addEventListener("scroll", () => {
