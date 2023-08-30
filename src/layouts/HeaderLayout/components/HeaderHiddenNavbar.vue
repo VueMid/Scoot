@@ -1,6 +1,6 @@
 <template>
     <nav
-        class="w-[80%] h-[100vh] mt-[67px] pt-[64px] pl-[0px] z-20 bg-dark-grey fixed top-0 right-0 mx-auto flex justify-center items-start">
+        class="w-[80%] h-[100vh] mt-[68px] pt-[64px] pl-[0px] z-20 bg-dark-grey fixed top-0 right-0 mx-auto flex justify-center items-start">
         <div class="">
             <ul class="flex flex-col justify-center items-center gap-10">
                 <li class="text-[18px] font-bold" v-for="item in headerMenu" :key="item">
