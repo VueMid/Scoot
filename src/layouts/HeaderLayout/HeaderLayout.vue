@@ -3,9 +3,9 @@
         <div class="container px-8 py-[22px] md:px-10 flex flex-row justify-between items-center">
             <HeaderLogo />
             <HeaderNavbar />
-            <HeaderButton @openMenu="toggleMenu" :isOpen="isOpen" />
+            <HeaderButton @openMenu="toggleMenu" :isOpen="isOpen" @closeMenu="toggleMenu" />
             <Transition name="menu">
-                <HeaderHiddenNavbar class="fixed block md:hidden" v-if="isOpen" @closeMenu="toggleMenu" />
+                <HeaderHiddenNavbar class="fixed block md:hidden" v-if="isOpen" />
             </Transition>
         </div>
     </header>
