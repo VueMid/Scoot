@@ -1,6 +1,6 @@
 <template>
     <nav
-        class="w-[80%] h-[100vh] mt-[68px] pt-[64px] pl-[0px] z-20 bg-dark-grey fixed top-0 right-0 mx-auto flex justify-center items-start">
+        class="w-[80%] h-[100vh] mt-[67px] pt-[64px] pl-[0px] z-20 bg-dark-grey fixed top-0 right-0 mx-auto flex justify-center items-start">
         <div class="">
             <ul class="flex flex-col justify-center items-center gap-10">
                 <li class="text-[18px] font-bold" v-for="item in headerMenu" :key="item">
@@ -9,7 +9,7 @@
                     </router-link>
                 </li>
                 <div class="flex flex-row justify-center items-center gap-8 mr-14 block md:hidden">
-                    <Thedarkmode class=""></Thedarkmode>
+                    <TheDarkMode />
                     <p class="text-[18px] font-bold text-white">Theme</p>
                 </div>
             </ul>
@@ -19,7 +19,7 @@
 </template>
 <script>
 import TheButton from '../../../MaterialUI/TheButton.vue';
-import Thedarkmode from '../../../materialui/thedarkmode.vue';
+import TheDarkMode from '../../../MaterialUI/TheDarkMode.vue';
 import headerJs from '../header.js';
 export default {
     data() {
@@ -29,7 +29,7 @@ export default {
         }
     },
     methods: {},
-    components: { TheButton, Thedarkmode }
+    components: { TheButton, TheDarkMode }
 }
 </script>
 <style scoped>
