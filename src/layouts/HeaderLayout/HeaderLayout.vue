@@ -5,8 +5,7 @@
             <HeaderNavbar />
             <HeaderButton @openMenu="toggleMenu" :isOpen="isOpen" />
             <Transition name="menu">
-                <HeaderHiddenNavbar class="fixed block md:hidden md:absolute z-[999]" v-if="isOpen"
-                    @closeMenu="toggleMenu" />
+                <HeaderHiddenNavbar class="fixed block md:hidden" v-if="isOpen" @closeMenu="toggleMenu" />
             </Transition>
         </div>
     </header>
