@@ -1,11 +1,39 @@
-<template></template>
+<template>
+    <nav
+        class="w-[80%] h-[100vh] mt-[68px] pt-[64px] pl-[0px] z-20 bg-dark-grey fixed top-0 right-0 mx-auto flex justify-center items-start">
+        <div class="">
+            <ul class="flex flex-col justify-center items-center gap-10">
+                <li class="text-[18px] font-bold" v-for="item in headerMenu" :key="item">
+                    <router-link :to="item.link" class="text-white">
+                        {{ item.name }}
+                    </router-link>
+                </li>
+                <div class="flex flex-row justify-center items-center gap-8 mr-14 block md:hidden">
+                    <Thedarkmode class=""></Thedarkmode>
+                    <p class="text-[18px] font-bold text-white">Theme</p>
+                </div>
+            </ul>
+            <TheButton class="mt-[150px]">Get Scootin</TheButton>
+        </div>
+    </nav>
+</template>
 <script>
+import TheButton from '../../../MaterialUI/TheButton.vue';
+import Thedarkmode from '../../../materialui/thedarkmode.vue';
+import headerJs from '../header.js';
 export default {
     data() {
-        return {}
+        return {
+            headerMenu: headerJs,
+            isOpen: false,
+        }
     },
     methods: {},
-    components: {}
+    components: { TheButton, Thedarkmode }
 }
 </script>
-<style></style>
+<style scoped>
+.router-link-exact-active {
+    color: #FCB72B;
+}
+</style>

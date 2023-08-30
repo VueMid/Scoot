@@ -3,13 +3,13 @@
         <div
             class="container hero__container flex flex-col justify-center items-center pt-[120px] pb-[200px] md:pt-[235px] lg:flex lg:flex-col lg:justify-center lg:items-start lg:pt-[123px]">
             <h2
-                class="hero__title w-[311px] text-center text-white text-[42px] font-bold leading-[46px] md:w-[573px] md:text-[56px] md:leading-[56px] lg:w-[515px] lg:text-start">
+                class="hero__title w-max-[311px] text-center text-white text-[42px] font-bold leading-[46px] md:w-[573px] md:text-[56px] md:leading-[56px] lg:w-[515px] lg:text-start">
                 Scooter sharing made simple
             </h2>
             <div
                 class="hero__mini-box flex flex-col justify-center items-center lg:flex lg:flex-col lg:justify-center lg:items-start lg:ml-[112px]">
                 <p
-                    class="hero__text w-[311px] text-center text-white text-[15px] font-normal leading-[25px] mt-6 md:w-[573px] lg:w-[405px] lg:text-start lg:mt-10">
+                    class="hero__text w-max-[311px] text-center text-white text-[15px] font-normal leading-[25px] mt-6 md:w-[573px] lg:w-[405px] lg:text-start lg:mt-10">
                     Scoot takes the hassle out of urban mobility. Our bikes are placed in convenient locations in each of
                     our
                     cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!
@@ -81,7 +81,8 @@ export default {
             position: absolute;
             content: '';
             display: inline-block;
-            width: 768px;
+            width: 100%;
+            max-width: 768px;
             height: 141px;
             top: 6%;
             left: -10px;
@@ -135,7 +136,7 @@ export default {
             display: inline-block;
             width: 140px;
             height: 151px;
-            top: 65.5%;
+            top: 70%;
             left: 0;
             background-image: url('@/assets/icons/yellow__short-cursor.svg');
             background-repeat: no-repeat;

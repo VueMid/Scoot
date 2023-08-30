@@ -7,11 +7,11 @@
                 <img class="scooter__images w-[56px] md:w-[96px]" src="@/assets/icons/phone.svg" alt="mobile">
                 <div class="scooter__mini-boxes">
                     <h4
-                        class="scooter__titles w-[311px] text-center text-dark-navy text-xl font-bold leading-7 mt-6 md:w-[398px] md:text-2xl md:leading-7 md:mt-0 md:text-start lg:mt-10 dark:text-white">
+                        class="scooter__titles w-max-[311px] text-center text-dark-navy text-xl font-bold leading-7 mt-6 md:w-[398px] md:text-2xl md:leading-7 md:mt-0 md:text-start lg:mt-10 dark:text-white">
                         Locate with app
                     </h4>
                     <p
-                        class="scooter__texts w-[311px] text-center text-dim-grey text-[15px] font-normal leading-[25px] mt-8 md:w-[398px] md:text-start md:mt-[27px] lg:w-[350px] dark:text-white/70">
+                        class="scooter__texts w-max-[311px] text-center text-dim-grey text-[15px] font-normal leading-[25px] mt-8 md:w-[398px] md:text-start md:mt-[27px] lg:w-[350px] dark:text-white/70">
                         Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas
                         with most demand, so one should never be too far away.
                     </p>
@@ -22,11 +22,11 @@
                 <img class="scooter__images w-[56px] md:w-[96px]" src="@/assets/icons/scoot.svg" alt="scoot">
                 <div class="scooter__mini-boxes">
                     <h4
-                        class="scooter__titles w-[311px] text-center text-dark-navy text-xl font-bold leading-7 mt-6 md:w-[398px] md:text-2xl md:leading-7 md:mt-0 md:text-start lg:mt-10 dark:text-white">
+                        class="scooter__titles w-max-[311px] text-center text-dark-navy text-xl font-bold leading-7 mt-6 md:w-[398px] md:text-2xl md:leading-7 md:mt-0 md:text-start lg:mt-10 dark:text-white">
                         Pick your scooter
                     </h4>
                     <p
-                        class="scooter__texts w-[311px] text-center text-dim-grey text-[15px] font-normal leading-[25px] mt-8 md:w-[398px] md:text-start md:mt-[27px] lg:w-[350px] dark:text-white/70">
+                        class="scooter__texts w-max-[311px] text-center text-dim-grey text-[15px] font-normal leading-[25px] mt-8 md:w-[398px] md:text-start md:mt-[27px] lg:w-[350px] dark:text-white/70">
                         We show the most important info for the scooters closest to you. So you know how much charge they
                         have left and can see roughly how much it will cost.
                     </p>
@@ -37,11 +37,11 @@
                 <img class="scooter__images w-[56px] md:w-[96px]" src="@/assets/icons/scooter.svg" alt="scooter">
                 <div class="scooter__mini-boxes">
                     <h4
-                        class="scooter__titles w-[311px] text-center text-dark-navy text-xl font-bold leading-7 mt-6 md:w-[398px] md:text-2xl md:leading-7 md:mt-0 md:text-start lg:mt-10 dark:text-white">
+                        class="scooter__titles w-max-[311px] text-center text-dark-navy text-xl font-bold leading-7 mt-6 md:w-[398px] md:text-2xl md:leading-7 md:mt-0 md:text-start lg:mt-10 dark:text-white">
                         Enjoy the ride
                     </h4>
                     <p
-                        class="scooter__texts w-[311px] text-center text-dim-grey text-[15px] font-normal leading-[25px] mt-8 md:w-[398px] md:text-start md:mt-[27px] lg:w-[350px] dark:text-white/70">
+                        class="scooter__texts w-max-[311px] text-center text-dim-grey text-[15px] font-normal leading-[25px] mt-8 md:w-[398px] md:text-start md:mt-[27px] lg:w-[350px] dark:text-white/70">
                         Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re
                         off!
                         Always lock bikes away from walkways and accessibility ramps.

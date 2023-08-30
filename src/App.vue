@@ -5,8 +5,7 @@
     <SignupLayout />
     <FooterLayout />
     <a class="scrollup w-[40px] h-[40px] leading-[40px] text-[15px] md:w-[60px] md:h-[60px] md:leading-[60px] md:text-[30px] 
-    lg:w-[45px] lg:h-[45px] lg:leading-[45px] lg:text-[20px] 
-    dark:bg-darker-yellow" href="#" id="scroll-up">
+    lg:w-[45px] lg:h-[45px] lg:leading-[45px] lg:text-[20px] bg-[#FCB72B] dark:bg-dark-navy" href="#" id="scroll-up">
       <i class="fa-solid fa-arrow-up fa-beat scroll__icon" style="color: #ffffff;"></i>
     </a>
   </main>
