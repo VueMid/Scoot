@@ -4,11 +4,11 @@
         <div class="">
             <ul class="flex flex-col justify-center items-center gap-10">
                 <li class="text-[18px] font-bold" v-for="item in headerMenu" :key="item">
-                    <router-link :to="item.link" class="text-white">
+                    <router-link :to="item.link" class="text-white" @click="$emit('closeMenu')">
                         {{ item.name }}
                     </router-link>
                 </li>
-                <div class="flex flex-row justify-center items-center gap-8 mr-14 block md:hidden">
+                <div class="flex flex-row justify-center items-center gap-8 mr-[50px] md:hidden">
                     <TheDarkMode />
                     <p class="text-[18px] font-bold text-white">Theme</p>
                 </div>

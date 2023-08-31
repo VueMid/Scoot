@@ -38,7 +38,7 @@ export default {
         display: inline-block;
         width: 101px;
         height: 445px;
-        top: 0;
+        bottom: 0;
         left: 0;
         background-image: url('@/assets/icons/grey__circle-mask.svg');
         background-repeat: no-repeat;
@@ -66,6 +66,7 @@ export default {
         position: relative;
 
         ::after {
+            margin-top: 130px;
             z-index: -1;
             transform: rotate(180deg);
             position: absolute;

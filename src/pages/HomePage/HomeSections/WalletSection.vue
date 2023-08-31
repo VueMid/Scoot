@@ -31,6 +31,7 @@ export default {
     position: relative;
 
     ::after {
+        margin-top: 150px;
         z-index: -1;
         content: '';
         position: absolute;
@@ -65,6 +66,7 @@ export default {
         position: relative;
 
         ::after {
+            margin-top: 120px;
             z-index: -1;
             content: '';
             position: absolute;

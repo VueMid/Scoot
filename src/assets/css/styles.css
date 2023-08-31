@@ -111,3 +111,14 @@ body {
     bottom: 5rem;
     transform: scale(1);
 }
+
+#preloader {
+    background-image: url('../icons/curious__loader.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 19999;
+}

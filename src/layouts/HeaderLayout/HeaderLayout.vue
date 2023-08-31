@@ -5,7 +5,7 @@
             <HeaderNavbar />
             <HeaderButton @openMenu="toggleMenu" :isOpen="isOpen" @closeMenu="toggleMenu" />
             <Transition name="menu">
-                <HeaderHiddenNavbar class="fixed block md:hidden" v-if="isOpen" />
+                <HeaderHiddenNavbar class="fixed block md:hidden" v-if="isOpen" @closeMenu="isOpen = false" />
             </Transition>
         </div>
     </header>
@@ -37,6 +37,7 @@ export default {
             console.log(window);
             if (window.pageYOffset > 0) {
                 document.querySelector(".header")?.classList.add("scrolled");
+                this.isOpen = false
             } else {
                 document.querySelector(".header")?.classList.remove("scrolled");
             }
@@ -47,7 +48,7 @@ export default {
 <style lang="scss">
 .menu-enter-active,
 .menu-leave-active {
-    transition: 0.4s ease;
+    transition: 0.3s ease;
 }
 
 .menu-enter-from,

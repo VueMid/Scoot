@@ -85,7 +85,7 @@ export default {
         display: inline-block;
         width: 101px;
         height: 445px;
-        top: 0;
+        bottom: 0;
         right: 0%;
         background-image: url('@/assets/icons/grey__circle-mask.svg');
         background-repeat: no-repeat;
@@ -113,6 +113,7 @@ export default {
         }
 
         ::before {
+            margin-top: 130px;
             z-index: -1;
             position: absolute;
             content: '';
@@ -157,4 +158,5 @@ export default {
             background-repeat: no-repeat;
         }
     }
-}</style>
+}
+</style>
