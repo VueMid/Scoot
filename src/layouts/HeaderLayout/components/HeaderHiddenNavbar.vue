@@ -13,7 +13,7 @@
                     <p class="text-[18px] font-bold text-white">Theme</p>
                 </div>
             </ul>
-            <TheButton class="mt-[150px]">Get Scootin</TheButton>
+            <TheButton class="mt-[120px]">Get Scootin</TheButton>
         </div>
     </nav>
 </template>
