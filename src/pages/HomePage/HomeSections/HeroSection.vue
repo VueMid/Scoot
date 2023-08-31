@@ -114,8 +114,8 @@ export default {
         background-attachment: fixed;
         background-image: url('@/assets/images/hero__third-backround-image.png');
         background-repeat: no-repeat;
-        background-position: top center;
-        background-size: contain;
+        background-position: right;
+        background-size: cover;
         position: relative;
 
         ::after {
