@@ -3,7 +3,7 @@ import {
   createWebHistory
 } from 'vue-router'
 import HomePage from '../pages/HomePage/HomePage.vue';
-const AboutPage = () => import('../pages/CareersPage/CareersPage.vue')
+const AboutPage = () => import('../pages/AboutPage/AboutPage.vue')
 const LocationPage = () => import('../pages/LocationPage/LocationPage.vue')
 const CareersPage = () => import('../pages/CareersPage/CareersPage.vue')
 const router = createRouter({
