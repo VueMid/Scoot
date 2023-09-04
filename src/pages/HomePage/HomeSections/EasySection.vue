@@ -137,7 +137,7 @@ export default {
             content: '';
             display: inline-block;
             width: 100%;
-            max-width: 325px;
+            max-width: 280px;
             height: 151px;
             top: 33%;
             right: 0;

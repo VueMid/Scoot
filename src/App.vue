@@ -18,8 +18,8 @@ export default {
   components: { HeaderLayout, FooterLayout, SignupLayout },
   mounted() {
     window.addEventListener('scroll', () => {
-      const scrollUp = document.getElementById('scroll-up');
-      if (scrollY > 560) {
+      const scrollUp = document.querySelector('.scrollup');
+      if (scrollY > 760) {
         scrollUp.classList.add('show-scroll');
       } else {
         scrollUp.classList.remove('show-scroll');
