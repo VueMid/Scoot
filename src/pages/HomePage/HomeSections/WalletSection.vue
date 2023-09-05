@@ -57,7 +57,7 @@ export default {
 <style lang="scss">
 .modal-enter-active,
 .modal-leave-active {
-    transition: 0.3s ease;
+    transition: 0.5s ease;
 }
 
 .modal-enter-from,
