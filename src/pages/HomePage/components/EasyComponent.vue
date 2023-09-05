@@ -2,7 +2,7 @@
     <div id="staticModal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
         class="easy__modal fixed top-0 left-0 right-0 w-full p-4 overflow-x-hidden overflow-y-auto h-full max-h-full bg-black/50 flex justify-center items-center lg:px-[0px]">
         <div
-            class="easy__modal-box z-[1111] relative w-full bg-white dark:bg-tailwind-dark flex flex-col justify-center items-center gap-[12px] pt-[30px] pb-[20px] md:flex md:flex-col md:justify-center md:items-center md:gap-[50px] md:py-[60px] lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-[70px] lg:py-[15px] lg:w-[1100px]">
+            class="easy__modal-box px-3  z-[1111] relative w-full bg-white dark:bg-tailwind-dark flex flex-col justify-center items-center gap-[12px] pt-[30px] pb-[20px] md:flex md:flex-col md:justify-center md:items-center md:gap-[50px] md:py-[60px] lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-[70px] lg:py-[15px] lg:w-[1100px]">
             <button type="easy__x-button button"
                 class="text-[#FCB72B] font-bold absolute top-2.5 right-2.5 md:top-5 md:right-5"
                 data-modal-hide="staticModal" @click="$emit('closeModal')">
@@ -18,12 +18,12 @@
             <div
                 class="easy__modal-right-box flex flex-col justify-center items-center gap-3 md:flex md:flex-col md:justify-center md:items-center md:gap-10 lg:flex lg:flex-col lg:justify-center lg:items-start">
                 <h3
-                    class="easy__modal-title w-[300px] text-dark-navy text-[28px] font-bold leading-8 text-center md:w-[457px] md:text-[44px] md:leading-[48px] pb-3 border-b-[5px] border-[#FCB72B] lg:text-start dark:text-white">
+                    class="easy__modal-title w-max-[300px] text-dark-navy text-[28px] font-bold leading-8 text-center md:w-[457px] md:text-[44px] md:leading-[48px] pb-3 border-b-[5px] border-[#FCB72B] lg:text-start dark:text-white">
                     Easy to use
                     riding telemetry
                 </h3>
                 <p
-                    class="easy__modal-text text-center text-dim-grey w-[311px] text-15px font-normal leading-[25px] md:w-[573px] lg:text-start dark:text-white/70">
+                    class="easy__modal-text text-center text-dim-grey w-max-[311px] text-15px font-normal leading-[25px] md:w-[573px] lg:text-start dark:text-white/70">
                     The Scoot app is available with riding telemetry. This means it can show you your
                     average
                     speed, how long you've been using the scooter, your traveling distance, and many more

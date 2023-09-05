@@ -41,9 +41,11 @@ export default {
     methods: {
         openModal(idx) {
             this.isModalOpened = true;
+            document.body.style.overflow = 'hidden';
         },
         closeModal() {
             this.isModalOpened = false;
+            document.body.style.overflow = 'auto';
         },
     },
     components: {
