@@ -1,5 +1,5 @@
 <template>
-    <section class="hero">
+    <section class="hero bg-fixed lg:bg-local">
         <div class="container hero__container flex flex-col justify-center items-center pt-[120px] pb-[200px] md:pt-[235px] 
             md:flex md:flex-col md:justify-center md:items-center
             xl:flex xl:flex-col xl:justify-center xl:items-start xl:pt-[123px]">
@@ -15,7 +15,8 @@
                     our
                     cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!
                 </p>
-                <TheButtonVue class="hero__button cursor-pointer mt-[34px] md:mt-8 xl:mt-10">Get Scootin</TheButtonVue>
+                <TheButtonVue class="hero__button cursor-pointer mt-[34px] md:mt-8 xl:mt-10">Get Scootin
+                </TheButtonVue>
             </div>
         </div>
     </section>
@@ -30,9 +31,9 @@ export default {
 </script>
 <style lang="scss">
 .hero {
-    background-attachment: fixed;
     background-image: url('@/assets/images/hero__backround-image.jpg');
     background-repeat: no-repeat;
+    background-position: center top;
     background-size: cover;
     position: relative;
 
@@ -63,7 +64,7 @@ export default {
     &__text {
         font-family: 'Lexend Deca';
     }
-}   
+}
 
 @media(max-width: 1290px) {
     .hero {

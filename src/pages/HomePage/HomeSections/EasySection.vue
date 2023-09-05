@@ -23,7 +23,7 @@
         </div>
     </section>
     <!-- Modal -->
-    <Transition name="modal">
+    <Transition name="modal" class="relative z-[1111]">
         <div class="easy__main-modal" v-if="isModalOpened">
             <EasyComponentVue @closeModal="closeModal" />
         </div>

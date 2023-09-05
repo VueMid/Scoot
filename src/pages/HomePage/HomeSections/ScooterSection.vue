@@ -8,7 +8,7 @@
                 <div
                     class="scooter__mini-boxes flex flex-col justify-center items-center gap-6 md:flex md:flex-col md:justify-center md:items-start md:gap-[17px] xl:flex xl:gap-[27px]">
                     <h4
-                        class="scooter__titles max-w-[311px] text-dark-navy text-xl font-bold leading-7 tracking-tighter-[-0.893px] md:w-[398px] md:text-2xl md:font-bold md:leading-7 md:tracking-tighter-[-1.071px] lg:text-2xl lg:tracking-tighter-[-1.071px] xl:text-2xl">
+                        class="scooter__titles max-w-[311px] text-dark-navy text-xl font-bold leading-7 tracking-tighter-[-0.893px] md:w-[398px] md:text-2xl md:font-bold md:leading-7 md:tracking-tighter-[-1.071px] lg:text-2xl lg:tracking-tighter-[-1.071px] xl:text-2xl dark:text-white">
                         Locate with app
                     </h4>
                     <p
@@ -24,7 +24,7 @@
                 <div
                     class="scooter__mini-boxes flex flex-col justify-center items-center gap-6 md:flex md:flex-col md:justify-center md:items-start md:gap-[17px] xl:flex xl:gap-[27px]">
                     <h4
-                        class="scooter__titles max-w-[311px] text-dark-navy text-xl font-bold leading-7 tracking-tighter-[-0.893px] md:w-[398px] md:text-2xl md:font-bold md:leading-7 md:tracking-tighter-[-1.071px] lg:text-2xl lg:tracking-tighter-[-1.071px] xl:text-2xl">
+                        class="scooter__titles max-w-[311px] text-dark-navy text-xl font-bold leading-7 tracking-tighter-[-0.893px] md:w-[398px] md:text-2xl md:font-bold md:leading-7 md:tracking-tighter-[-1.071px] lg:text-2xl lg:tracking-tighter-[-1.071px] xl:text-2xl dark:text-white">
                         Pick your scooter
                     </h4>
                     <p
@@ -40,7 +40,7 @@
                 <div
                     class="scooter__mini-boxes flex flex-col justify-center items-center gap-6 md:flex md:flex-col md:justify-center md:items-start md:gap-[17px] xl:flex xl:gap-[27px]">
                     <h4
-                        class="scooter__titles max-w-[311px] text-dark-navy text-xl font-bold leading-7 tracking-tighter-[-0.893px] md:w-[398px] md:text-2xl md:font-bold md:leading-7 md:tracking-tighter-[-1.071px] lg:text-2xl lg:tracking-tighter-[-1.071px] xl:text-2xl">
+                        class="scooter__titles max-w-[311px] text-dark-navy text-xl font-bold leading-7 tracking-tighter-[-0.893px] md:w-[398px] md:text-2xl md:font-bold md:leading-7 md:tracking-tighter-[-1.071px] lg:text-2xl lg:tracking-tighter-[-1.071px] xl:text-2xl dark:text-white">
                         Enjoy the ride
                     </h4>
                     <p

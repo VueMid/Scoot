@@ -15,18 +15,54 @@
                     want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming
                     year.
                 </p>
-                <TheButton class="city__button mt-8 md:mt-10">Learn More</TheButton>
+                <TheButton class="city__button mt-8 md:mt-10" data-modal-target="staticModal"
+                    data-modal-toggle="staticModal" type="button" @click="openModal">
+                    Learn More
+                </TheButton>
             </div>
         </div>
     </section>
+    <!-- Modal -->
+    <Transition name="modal" class="relative z-[1111]">
+        <div class="city__main-modal" v-if="isModalOpened">
+            <CityComponent @closeModal="closeModal" />
+        </div>
+    </Transition>
 </template>
 <script>
 import TheButton from '../../../MaterialUI/TheButton.vue';
+import CityComponent from '../components/CityComponent.vue';
 export default {
-    components: { TheButton }
+    data() {
+        return {
+            isModalOpened: false
+        }
+    },
+    methods: {
+        openModal(idx) {
+            this.isModalOpened = true;
+        },
+        closeModal() {
+            this.isModalOpened = false;
+        },
+    },
+    components: {
+        TheButton,
+        CityComponent
+    }
 }
 </script>
 <style lang="scss">
+.modal-enter-active,
+.modal-leave-active {
+    transition: 0.3s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+    opacity: 0;
+}
+
 .city {
     position: relative;
 
