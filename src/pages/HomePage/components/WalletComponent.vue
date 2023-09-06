@@ -39,3 +39,10 @@ export default {
     }
 }
 </script>
+<style lang="scss">
+.wallet {
+    &__modal-text {
+        font-family: 'Lexend Deca';
+    }
+}
+</style>

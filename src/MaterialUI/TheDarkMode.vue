@@ -1,8 +1,8 @@
 <template>
     <div>
-        <button @click="toogleDark()" class="w-5 block">
-            <i v-if="isDark" class="fa-solid fa-sun fa-2xl cursor-pointer" style="color: #FCB72B;"></i>
-            <i v-else class="fa-solid fa-moon fa-2xl cursor-pointer" style="color: #FCB72B;"></i>
+        <button @click="toogleDark()" class="w-10 block">
+            <img v-if="useDark" src="@/assets/icons/sun.svg" alt="sun" width="64" height="64">
+            <img v-else src="@/assets/icons/moon.svg" alt="moon" width="64" height="64">
         </button>
     </div>
 </template>
@@ -11,4 +11,3 @@ import { useDark, useToggle } from '@vueuse/core';
 const isDark = useDark()
 const toogleDark = useToggle(isDark);
 </script>
-<style></style>

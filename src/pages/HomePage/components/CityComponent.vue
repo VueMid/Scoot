@@ -39,3 +39,10 @@ export default {
     }
 }
 </script>
+<style lang="scss">
+.city {
+    &__modal-text {
+        font-family: 'Lexend Deca';
+    }
+}
+</style>

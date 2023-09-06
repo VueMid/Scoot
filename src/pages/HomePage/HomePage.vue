@@ -17,4 +17,3 @@ export default {
     components: { HeroSection, ScooterSection, EasySection, CitySection, WalletSection }
 }
 </script>
-<style></style  >

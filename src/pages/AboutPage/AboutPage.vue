@@ -15,4 +15,3 @@ export default {
     components: { AboutSection, MobiliytSection, UrbanSection, ValueSection }
 }
 </script>
-<style></style>

@@ -43,4 +43,10 @@ export default {
     }
 }
 </script>
-<style></style>
+<style lang="scss">
+.easy {
+    &__modal-text {
+        font-family: 'Lexend Deca';
+    }
+}
+</style>
