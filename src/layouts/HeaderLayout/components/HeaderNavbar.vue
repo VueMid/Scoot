@@ -4,8 +4,8 @@
             <li class="header__lists font-bold text-[15px] text-dim-grey dark:text-white active:text-darker-yellow lg:hover:text-darker-yellow cursor-pointer"
                 v-for="item in itemList" :key="item">
                 <router-link :to="item.link">
+                    {{ item.name }}
                 </router-link>
-                {{ item.name }}
             </li>
         </ul>
     </nav>

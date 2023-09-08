@@ -1,9 +1,9 @@
 <template>
   <main>
     <HeaderLayout />
-    <transition name="fade">
+    <Transition name="fade">
       <RouterView />
-    </transition>
+    </Transition>
     <SignupLayout />
     <FooterLayout />
     <a class="scrollup cursor-pointer w-[40px] h-[40px] leading-[40px] text-[15px] md:w-[60px] md:h-[60px] md:leading-[60px] md:text-[30px] 
