@@ -1,7 +1,7 @@
 <template>
     <div>
         <button @click="toogleDark()" class="w-10 block">
-            <img v-if="useDark" src="@/assets/icons/sun.svg" alt="sun" width="64" height="64">
+            <img v-if="isDark" src="@/assets/icons/sun.svg" alt="sun" width="64" height="64">
             <img v-else src="@/assets/icons/moon.svg" alt="moon" width="64" height="64">
         </button>
     </div>

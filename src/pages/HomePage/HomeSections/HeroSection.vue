@@ -15,21 +15,55 @@
                     our
                     cities. Use our app to locate the nearest bike, unlock it with a tap, and you’re away!
                 </p>
-                <TheButtonVue class="hero__button cursor-pointer mt-[34px] md:mt-8 xl:mt-10">Get Scootin
+                <TheButtonVue @action="openModals" class="hero__button cursor-pointer mt-[34px] md:mt-8 xl:mt-10">
+                    Get Scootin
                 </TheButtonVue>
             </div>
         </div>
     </section>
+    <!-- Modal -->
+    <Transition name="modal" class="relative z-[1111]">
+        <div class="header__main-modal" v-if="isModalOpened">
+            <HeroComponent @closeModal="closeModal" />
+        </div>
+    </Transition>
 </template>
 <script>
 import TheButtonVue from '../../../MaterialUI/TheButton.vue'
+import HeroComponent from '../components/HeroComponent.vue';
 export default {
+    data() {
+        return {
+            isModalOpened: false
+        }
+    },
+    methods: {
+        openModals() {
+            this.isModalOpened = true;
+            document.body.style.overflow = 'hidden';
+        },
+        closeModal() {
+            this.isModalOpened = false;
+            document.body.style.overflow = 'auto';
+        }
+    },
     components: {
         TheButtonVue,
+        HeroComponent
     }
 }
 </script>
 <style lang="scss">
+.modal-enter-active,
+.modal-leave-active {
+    transition: 0.4s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+    opacity: 0;
+}
+
 .hero {
     background-image: url('@/assets/images/hero__backround-image.jpg');
     background-repeat: no-repeat;

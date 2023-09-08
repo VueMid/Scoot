@@ -63,6 +63,12 @@ export default {
 }
 </script>
 <style lang="scss">
+.scooter {
+    &__texts {
+        font-family: 'Lexend Deca';
+    }
+}
+
 @media(max-width: 2560px) {
     .scooter {
         position: relative;

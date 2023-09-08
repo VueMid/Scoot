@@ -23,6 +23,7 @@
     position: relative;
 
     ::after {
+        pointer-events: none;
         z-index: 1;
         position: absolute;
         content: '';
@@ -54,6 +55,7 @@
         background-size: cover;
 
         ::after {
+            pointer-events: none;
             z-index: 1;
             position: absolute;
             content: '';
@@ -85,6 +87,7 @@
         background-size: cover;
 
         ::after {
+            pointer-events: none;
             z-index: 1;
             position: absolute;
             content: '';

@@ -39,7 +39,7 @@ export default {
         }
     },
     methods: {
-        openModal(idx) {
+        openModal() {
             this.isModalOpened = true;
             document.body.style.overflow = 'hidden';
         },

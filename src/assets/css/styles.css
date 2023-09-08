@@ -44,15 +44,6 @@ p {
     font-family: inherit;
 }
 
-input,
-input:focus,
-textarea {
-    all: unset;
-    border: none;
-    outline: none;
-    resize: none;
-}
-
 ul,
 ol,
 li {
@@ -89,9 +80,11 @@ body {
     color: var(--black);
     overflow-x: hidden;
 }
-.container{
+
+.container {
     overflow: hidden !important;
 }
+
 .scrollup {
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
     width: 40px;
