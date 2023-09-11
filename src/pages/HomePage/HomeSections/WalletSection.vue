@@ -69,6 +69,7 @@ export default {
     position: relative;
 
     ::after {
+        pointer-events: none;
         margin-top: 150px;
         z-index: -1;
         content: '';
@@ -83,6 +84,7 @@ export default {
     }
 
     ::before {
+        pointer-events: none;
         content: '';
         position: absolute;
         display: inline-block;
@@ -104,6 +106,7 @@ export default {
         position: relative;
 
         ::after {
+            pointer-events: none;
             margin-top: 120px;
             z-index: -1;
             content: '';
@@ -118,6 +121,7 @@ export default {
         }
 
         ::before {
+            pointer-events: none;
             content: '';
             position: absolute;
             display: inline-block;
@@ -136,6 +140,7 @@ export default {
         position: relative;
 
         ::after {
+            pointer-events: none;
             z-index: -1;
             content: '';
             position: absolute;
@@ -149,6 +154,7 @@ export default {
         }
 
         ::before {
+            pointer-events: none;
             content: '';
             position: absolute;
             display: inline-block;
