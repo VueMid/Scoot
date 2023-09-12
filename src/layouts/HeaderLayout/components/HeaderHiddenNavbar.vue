@@ -1,6 +1,6 @@
 <template>
     <nav
-        class="w-[80%] h-[110vh] mt-[68px] pt-[64px] pl-[0px] z-20 bg-dark-grey fixed top-0 right-0 mx-auto flex justify-center items-start">
+        class="w-[80%] h-[110vh] mt-[68px] pt-[64px] pl-[0px] z-20 bg-dark-grey fixed top-0 right-0 mx-auto flex justify-center items-start md:hidden">
         <div class="">
             <ul class="flex flex-col justify-center items-center gap-10">
                 <li class="text-[18px] font-bold" v-for="item in headerMenu" :key="item">
@@ -50,5 +50,15 @@ export default {
 <style scoped>
 .router-link-exact-active {
     color: #FCB72B;
+}
+
+.modal-enter-active,
+.modal-leave-active {
+    transition: 0.4s ease;
+}
+
+.modal-enter-from,
+.modal-leave-to {
+    opacity: 0;
 }
 </style>

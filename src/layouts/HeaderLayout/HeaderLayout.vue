@@ -1,14 +1,14 @@
 <template>
     <header class="header fixed z-[1111] bg-white w-full lg:static dark:bg-tailwind-dark">
-        <div class="container px-8 py-[22px] md:px-10 flex flex-row justify-between items-center">
+        <div class="container px-8 py-[22px] md:px-10 lg:px-0 flex flex-row justify-between items-center">
             <HeaderLogo />
             <HeaderNavbar />
-            <HeaderButton @openMenu="toggleMenu" :isOpen="isOpen" @closeMenu="toggleMenu" />
-            <Transition name="menu">
-                <HeaderHiddenNavbar class="fixed block md:hidden" v-if="isOpen" @closeMenu="isOpen = false" />
-            </Transition>
+            <HeaderButton @openMenu="openMenu" :isOpen="isOpen" @closeMenu="closeMenu" />
         </div>
     </header>
+    <Transition name="navbar">
+        <HeaderHiddenNavbar v-if="isOpen" @closeMenu="closeMenu" />
+    </Transition>
 </template>
 <script>
 import HeaderLogo from './components/HeaderLogo.vue';
@@ -22,38 +22,31 @@ export default {
         }
     },
     methods: {
-        toggleMenu() {
-            this.isOpen = !this.isOpen
-        }
+        openMenu() {
+            this.isOpen = true;
+            document.body.style.overflow = 'hidden';
+        },
+        closeMenu() {
+            this.isOpen = false;
+            document.body.style.overflow = 'auto';
+        },
     },
     components: {
         HeaderLogo,
         HeaderNavbar,
         HeaderButton,
-        HeaderHiddenNavbar
+        HeaderHiddenNavbar,
     },
-    mounted() {
-        window.addEventListener("scroll", () => {
-            console.log(window);
-            if (window.pageYOffset > 0) {
-                document.querySelector(".header")?.classList.add("scrolled");
-                this.isOpen = false
-            } else {
-                document.querySelector(".header")?.classList.remove("scrolled");
-            }
-        });
-    }
 }
 </script>
 <style lang="scss">
-.menu-enter-active,
-.menu-leave-active {
-    transition: 0.3s ease;
+.navbar-enter-active,
+.navbar-leave-active {
+    transition: opacity 0.5s ease;
 }
 
-.menu-enter-from,
-.menu-leave-to {
-    transform: translate(100%);
+.navbar-enter-from,
+.navbar-leave-to {
     opacity: 0;
 }
 

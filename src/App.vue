@@ -30,7 +30,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style >
 .fade-enter-active,
 .fade-leave-active {
   transition: 0.3s ease;
