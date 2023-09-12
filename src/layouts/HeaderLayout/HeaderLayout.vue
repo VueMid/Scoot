@@ -6,7 +6,7 @@
             <HeaderButton @openMenu="openMenu" :isOpen="isOpen" @closeMenu="closeMenu" />
         </div>
     </header>
-    <Transition name="navbar">
+    <Transition name="navbar" class="relative z-[1111]">
         <HeaderHiddenNavbar v-if="isOpen" @closeMenu="closeMenu" />
     </Transition>
 </template>
@@ -42,12 +42,12 @@ export default {
 <style lang="scss">
 .navbar-enter-active,
 .navbar-leave-active {
-    transition: opacity 0.5s ease;
+    transition: 0.2s ease;
 }
 
 .navbar-enter-from,
 .navbar-leave-to {
-    opacity: 0;
+    transform: translateX(100%);
 }
 
 @media(max-width: 820px) {

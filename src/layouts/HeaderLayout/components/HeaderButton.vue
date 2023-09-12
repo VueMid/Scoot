@@ -9,8 +9,7 @@
             <button class="block md:hidden" v-if="!isOpen" @click="$emit('openMenu')">
                 <img class="w-[24px] h-[24px]" src="@/assets/icons/open__menu.svg" alt="open__menu">
             </button>
-            <button class="block md:hidden" v-else @click="$emit('closeMenu')" data-modal-target="staticModal"
-                data-modal-toggle="staticModal">
+            <button class="block md:hidden" v-else @click="$emit('closeMenu')">
                 <img class=" w-[24px] h-[24px]" src="@/assets/icons/close__menu.svg" alt="close__menu">
             </button>
         </div>
