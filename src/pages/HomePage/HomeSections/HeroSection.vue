@@ -1,8 +1,7 @@
 <template>
     <section class="hero bg-fixed lg:bg-local">
-        <div class="container hero__container flex flex-col justify-center items-center pt-[120px] pb-[200px] md:pt-[235px] 
-            md:flex md:flex-col md:justify-center md:items-center
-            xl:flex xl:flex-col xl:justify-center xl:items-start xl:pt-[123px]">
+        <div
+            class="container hero__container flex flex-col justify-center items-center pt-[115px] pb-[180px] md:pt-[135px] md:pb-[217px] md:flex md:flex-col md:justify-center md:items-center xl:flex xl:flex-col xl:justify-center xl:items-start xl:pt-[153px] xl:pb-[152px] xl:px-0">
             <h2
                 class="hero__title w-max-[311px] text-center text-white text-[42px] font-bold leading-[46px] md:w-[573px] md:text-[56px] md:leading-[56px] lg:text-center xl:w-[515px] xl:text-start">
                 Scooter sharing made simple
@@ -66,8 +65,9 @@ export default {
 
 .hero {
     background-image: url('@/assets/images/hero__backround-image.jpg');
+    background-position: top right;
+    transform: translateY(0px);
     background-repeat: no-repeat;
-    background-position: center top;
     background-size: cover;
     position: relative;
 
@@ -104,15 +104,12 @@ export default {
 
 @media(max-width: 1290px) {
     .hero {
-        width: 100% !important;
-        background-attachment: fixed;
-        background-image: url('@/assets/images/hero__second-backround-image.jpg');
+        transform: translateY(0px);
+        background-image: url('@/assets/images/hero__backround-image.jpg');
         background-repeat: no-repeat;
         background-position: top right;
         background-size: cover;
         position: relative;
-
-
 
         ::after {
             pointer-events: none;
@@ -150,15 +147,12 @@ export default {
 
 @media(max-width: 820px) {
     .hero {
-        width: 100% !important;
-        background-attachment: fixed;
+        transform: translateY(97px);
         background-image: url('@/assets/images/hero__second-backround-image.jpg');
         background-repeat: no-repeat;
         background-position: top right;
         background-size: cover;
         position: relative;
-
-
 
         ::after {
             pointer-events: none;
@@ -168,8 +162,8 @@ export default {
             display: inline-block;
             width: 100%;
             max-width: 768px;
-            height: 141px;
-            top: 6%;
+            height: 81px;
+            top: 0%;
             left: -10px;
             background-image: url('@/assets/icons/top__circles.svg');
             background-repeat: no-repeat;
@@ -182,7 +176,7 @@ export default {
             display: inline-block;
             width: 452px;
             height: 151px;
-            top: 73%;
+            top: 69%;
             right: 58%;
             background-image: url('@/assets/icons/yellow__left-cursor-path.svg');
             background-repeat: no-repeat;
@@ -196,8 +190,7 @@ export default {
 
 @media(max-width: 700px) {
     .hero {
-        width: 100%;
-        background-attachment: fixed;
+        transform: translateY(68px);
         background-image: url('@/assets/images/hero__third-backround-image.png');
         background-repeat: no-repeat;
         background-position: right;
@@ -224,7 +217,7 @@ export default {
             display: inline-block;
             width: 140px;
             height: 151px;
-            top: 70%;
+            top: 74%;
             left: 0;
             background-image: url('@/assets/icons/yellow__short-cursor.svg');
             background-repeat: no-repeat;

@@ -43,7 +43,7 @@ export default {
 <style lang="scss">
 .navbar-enter-active,
 .navbar-leave-active {
-    transition: 0.7s ease;
+    transition: 0.6s ease;
 }
 
 .navbar-enter-from,
