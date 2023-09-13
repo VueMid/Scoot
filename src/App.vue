@@ -10,6 +10,7 @@
     lg:w-[45px] lg:h-[45px] lg:leading-[45px] lg:text-[20px] bg-[#FCB72B] dark:bg-dark-navy" href="#" id="scroll-up">
       <i class="fa-solid fa-arrow-up fa-beat scroll__icon" style="color: #ffffff;"></i>
     </a>
+    <div class="bg-darker-yellow dark:bg-tailwind-dark" id="preloader"></div>
   </main>
 </template>
 <script>
@@ -19,6 +20,11 @@ import SignupLayout from './components/SignupLayout.vue';
 export default {
   components: { HeaderLayout, FooterLayout, SignupLayout },
   mounted() {
+    let loader = document.querySelector('#preloader')
+    window.addEventListener('load', () => {
+      loader.style.transform = 'translateY(-100%)';
+      loader.style.transition = 'all 2.2s ease-in';
+    })
     window.addEventListener('scroll', () => {
       const scrollUp = document.querySelector('.scrollup');
       if (scrollY > 560) {
@@ -27,6 +33,7 @@ export default {
         scrollUp.classList.remove('show-scroll');
       }
     })
+
   }
 }
 </script>

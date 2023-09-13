@@ -3,9 +3,6 @@ import {
   createWebHistory
 } from 'vue-router'
 import HomePage from '../pages/HomePage/HomePage.vue';
-const AboutPage = () => import('../pages/AboutPage/AboutPage.vue')
-const LocationPage = () => import('../pages/LocationPage/LocationPage.vue')
-const CareersPage = () => import('../pages/CareersPage/CareersPage.vue')
 const router = createRouter({
   history: createWebHistory(
     import.meta.env.BASE_URL),
@@ -17,17 +14,17 @@ const router = createRouter({
     {
       path: '/about',
       name: 'about',
-      component: AboutPage,
+      component: () => import('../pages/AboutPage/AboutPage.vue'),
     },
     {
       path: '/location',
       name: 'location',
-      component: LocationPage
+      component: () => import('../pages/LocationPage/LocationPage.vue'),
     },
     {
       path: '/careers',
       name: 'careers',
-      component: CareersPage
+      component: () => import('../pages/CareersPage/CareersPage.vue'),
     },
   ]
 })
