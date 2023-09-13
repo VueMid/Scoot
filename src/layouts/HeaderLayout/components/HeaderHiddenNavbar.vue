@@ -1,15 +1,15 @@
 <template>
     <nav
-        class="w-full h-[110vh] mt-[0px] pt-[134px] z-[999] pl-8 bg-dark-grey/95 fixed top-0 right-0 mx-auto flex justify-between items-start md:hidden">
+        class="w-full h-[110vh] mt-[0px] pt-[134px] z-[999] pl-8 bg-snow/95 dark:bg-dark-grey/95 fixed top-0 right-0 mx-auto flex justify-between items-start md:hidden">
         <div class="">
             <ul class="flex flex-col justify-between items-start gap-10">
                 <li class="text-[18px] font-bold" v-for="item in headerMenu" :key="item">
-                    <router-link :to="item.link" class="text-white" @click="$emit('closeMenu')">
+                    <router-link :to="item.link" class="text-dark-grey dark:text-white" @click="$emit('closeMenu')">
                         {{ item.name }}
                     </router-link>
                 </li>
                 <div class="md:hidden">
-                    <p class="text-[18px] font-bold text-white">Theme</p>
+                    <p class="text-[18px] font-bold text-dark-grey dark:text-white">Theme</p>
                 </div>
             </ul>
         </div>
@@ -39,7 +39,7 @@ export default {
     components: { TheDarkMode, HeaderButtonComponent }
 }
 </script>
-<style lang="scss" scoped>
+<style scoped>
 .router-link-exact-active {
     color: #FCB72B;
 }

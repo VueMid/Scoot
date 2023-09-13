@@ -1,5 +1,5 @@
 <template>
-    <nav class="header__navbar mr-auto ml-[58px] hidden md:block">
+    <nav class="header__navbar mr-auto md:ml-[38px] xl:ml-[88px] hidden md:block">
         <ul class="header__list flex justify-center items-center gap-8">
             <li class="header__lists font-bold text-[15px] text-dim-grey dark:text-white active:text-darker-yellow lg:hover:text-darker-yellow cursor-pointer"
                 v-for="item in itemList" :key="item">
