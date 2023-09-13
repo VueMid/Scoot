@@ -7,7 +7,7 @@
                 Our values
             </h3>
             <div
-                class="value__main-box flex flex-col justify-center items-center gap-[55px] lg:flex lg:flex-row lg:justify-between lg:items-center lg:gap-[50px]">
+                class="value__main-box flex flex-col justify-center items-center gap-[55px] md:flex md:flex-wrap md:flex-col md:justify-center md:items-center md:gap-[55px] xl:flex xl:flex-row xl:flex-nowrap xl:justify-between xl:items-center">
                 <div class="value__boxes flex flex-col justify-center items-center">
                     <img class="value__images w-[240px] md:w-[350px]" src="@/assets/images/about__first.png" alt="Our tech">
                     <h5

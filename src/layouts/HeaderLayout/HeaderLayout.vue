@@ -1,12 +1,13 @@
 <template>
     <header class="header fixed z-[1111] bg-white w-full lg:static dark:bg-tailwind-dark">
-        <div class="container px-8 py-[22px] md:px-10 lg:px-0 flex flex-row justify-between items-center">
+        <div
+            class="container px-8 py-[22px] flex flex-row-reverse justify-between items-center md:px-10 lg:px-0 md:flex md:flex-row md:justify-between md:items-center">
             <HeaderLogo />
             <HeaderNavbar />
             <HeaderButton @openMenu="openMenu" :isOpen="isOpen" @closeMenu="closeMenu" />
         </div>
     </header>
-    <Transition name="navbar" class="relative z-[1111]">
+    <Transition name="navbar">
         <HeaderHiddenNavbar v-if="isOpen" @closeMenu="closeMenu" />
     </Transition>
 </template>
@@ -42,12 +43,12 @@ export default {
 <style lang="scss">
 .navbar-enter-active,
 .navbar-leave-active {
-    transition: 0.2s ease;
+    transition: 0.5s ease;
 }
 
 .navbar-enter-from,
 .navbar-leave-to {
-    transform: translateX(100%);
+    transform: translateX(-100%);
 }
 
 @media(max-width: 820px) {
