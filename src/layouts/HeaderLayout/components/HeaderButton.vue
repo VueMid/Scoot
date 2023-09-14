@@ -13,8 +13,8 @@
                 <img class=" w-[24px] h-[24px]" src="@/assets/icons/close__menu.svg" alt="close__menu">
             </button>
         </div>
-        <Transition name="modal">
-            <div class="header__main-modal" v-if="isModalOpened">
+        <Transition name="modal" class="relative z-[1111]">
+            <div class="header__main-modal hidden md:block" v-if="isModalOpened">
                 <HeaderButtonComponent @closeModal="closeModal" />
             </div>
         </Transition>

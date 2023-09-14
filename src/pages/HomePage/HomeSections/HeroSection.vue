@@ -1,5 +1,5 @@
 <template>
-    <section class="hero bg-fixed lg:bg-local">
+    <section class="hero bg-fixed lg:bg-local relative">
         <div
             class="container hero__container flex flex-col justify-center items-center pt-[115px] pb-[180px] md:pt-[135px] md:pb-[217px] md:flex md:flex-col md:justify-center md:items-center xl:flex xl:flex-col xl:justify-center xl:items-start xl:pt-[153px] xl:pb-[152px] xl:px-0">
             <h2

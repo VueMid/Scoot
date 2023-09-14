@@ -2,7 +2,7 @@
     <div id="staticModal" data-modal-backdrop="static" tabindex="-1" aria-hidden="true"
         class="easy__modal fixed top-0 left-0 right-0 w-full p-4 overflow-x-hidden overflow-y-auto h-full max-h-full bg-black/50 flex justify-center items-center lg:px-[0px]">
         <div
-            class="easy__modal-box px-3  z-[1111] relative w-full bg-white dark:bg-tailwind-dark flex flex-col justify-center items-center gap-[12px] pt-[30px] pb-[20px] md:flex md:flex-col md:justify-center md:items-center md:gap-[50px] md:py-[60px] lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-[70px] lg:py-[15px] lg:w-[1100px]">
+            class="easy__modal-box px-3 z-[1111] relative w-full bg-white dark:bg-tailwind-dark flex flex-col justify-center items-center gap-[12px] pt-[30px] pb-[20px] md:flex md:flex-col md:justify-center md:items-center md:gap-[50px] md:py-[60px] lg:flex lg:flex-row lg:justify-center lg:items-center lg:gap-[70px] lg:py-[15px] lg:w-[1100px]">
             <button type="easy__x-button button" class="text-[#FCB72B] font-bold absolute top-3 right-3 md:top-5 md:right-5"
                 data-modal-hide="staticModal" @click="$emit('closeModal')">
                 <svg class="w-5 h-5 md:w-8 md:h-8" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
