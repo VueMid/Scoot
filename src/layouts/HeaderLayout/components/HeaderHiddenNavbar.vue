@@ -1,6 +1,6 @@
 <template>
     <nav
-        class="w-full h-[110vh] mt-[0px] pt-[134px] z-[999] pl-8 backdrop-blur-sm bg-white/80 dark:bg-tailwind-dark/90 fixed top-0 right-0 mx-auto flex justify-between items-start md:hidden md:backdrop-blur-none">
+        class="w-full h-[110vh] mt-[0px] pt-[134px] z-[999] pl-8 backdrop-blur-md bg-white/90 dark:bg-tailwind-dark/80 fixed top-0 right-0 mx-auto flex justify-between items-start md:hidden md:backdrop-blur-none">
         <div class="">
             <ul class="flex flex-col justify-between items-start gap-10">
                 <li class="text-[18px] font-bold" v-for="item in headerMenu" :key="item">
@@ -25,7 +25,6 @@ export default {
         return {
             isModalOpened: false,
             headerMenu: headerJs,
-            isOpen: false,
         }
     },
     methods: {

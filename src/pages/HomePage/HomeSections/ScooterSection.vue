@@ -61,25 +61,6 @@
     }
 }
 
-@media(max-width: 2560px) {
-    .scooter {
-        position: relative;
-
-        ::before {
-            z-index: -1;
-            position: absolute;
-            content: '';
-            display: none;
-            width: 974px;
-            height: 15px;
-            top: 15%;
-            left: 0;
-            background-image: url('@/assets/icons/grey__path.svg');
-            background-repeat: no-repeat;
-        }
-    }
-}
-
 @media(max-width: 1366px) {
     .scooter {
         position: relative;

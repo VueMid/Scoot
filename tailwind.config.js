@@ -18,6 +18,7 @@ export default {
         'light-yellow': '#FFF4DF',
         'dark-grey': '#333A44',
         'tailwind-dark': '#1E293B',
+        'tailwind-dark-second': '#374151',
       }
     },
     container: {

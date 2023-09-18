@@ -78,7 +78,7 @@ export default {
         display: inline-block;
         width: 203px;
         height: 16px;
-        top: 49%;
+        top: 53%;
         left: -2%;
         background-image: url('@/assets/icons/yellow__path.svg');
         background-repeat: no-repeat;
@@ -91,7 +91,7 @@ export default {
         display: inline-block;
         width: 452px;
         height: 151px;
-        top: 49%;
+        top: 53%;
         right: 16.5%;
         background-image: url('@/assets/icons/yellow__left-cursor-path.svg');
         background-repeat: no-repeat;
@@ -102,7 +102,7 @@ export default {
     }
 }
 
-@media(max-width: 1290px) {
+@media(max-width: 1346px) {
     .hero {
         transform: translateY(0px);
         background-image: url('@/assets/images/hero__backround-image.jpg');
@@ -188,7 +188,7 @@ export default {
     }
 }
 
-@media(max-width: 700px) {
+@media(max-width: 767px) {
     .hero {
         transform: translateY(68px);
         background-image: url('@/assets/images/hero__third-backround-image.png');
@@ -218,6 +218,43 @@ export default {
             width: 140px;
             height: 151px;
             top: 74%;
+            left: 0;
+            background-image: url('@/assets/icons/yellow__short-cursor.svg');
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+@media(max-width: 700px) {
+    .hero {
+        transform: translateY(68px);
+        background-image: url('@/assets/images/hero__third-backround-image.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: cover;
+        position: relative;
+
+        ::after {
+            pointer-events: none;
+            position: absolute;
+            content: '';
+            display: none;
+            width: 203px;
+            height: 16px;
+            top: 44%;
+            left: 0;
+            background-image: url('@/assets/icons/yellow__path.svg');
+            background-repeat: no-repeat;
+        }
+
+        ::before {
+            pointer-events: none;
+            position: absolute;
+            content: '';
+            display: inline-block;
+            width: 140px;
+            height: 151px;
+            top: 70%;
             left: 0;
             background-image: url('@/assets/icons/yellow__short-cursor.svg');
             background-repeat: no-repeat;
