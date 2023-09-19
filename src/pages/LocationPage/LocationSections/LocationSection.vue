@@ -1,5 +1,5 @@
 <template>
-    <section class="location">
+    <section class="location mb-[134px] md:mb-[96px]">
         <div
             class="container location__container flex flex-row justify-center items-center py-[60px] md:flex md:flex-row md:justify-start md:items-center md:px-[97px] md:py-[72px] lg:flex lg:flex-row lg:justify-start lg:items-center lg:px-0">
             <h2 class="location__text text-white text-[40px] font-bold leading-10 tracking-tighter-[-1.786px]">

@@ -29,7 +29,6 @@
                                 {{ item.text }}
                             </p>
                         </div>
-
                     </article>
                 </div>
             </div>
