@@ -40,17 +40,17 @@ export default {
             accordionArray: [
                 {
                     title: 'Should I wear a helmet?',
-                    text: `Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.`,
+                    text: `Adults aren't required by law to wear helmets, but they're important and potentially life-saving. Helmets help to protect the head when involved in many types of crashes or falls while engaged in active sports.`,
                     isOpen: false,
                 },
                 {
                     title: 'How about the rules & regulations?',
-                    text: `Scoot web page scoot map makes it easy for users to find and use nearby scooters. Scoot does not matter where you are, it works everywhere you use this web site`,
+                    text: `How do I operate a scooter? Most scooters have an automatic transmission, so all you need to do is twist the throttle to get going. To stop, simply release the throttle and brake with your foot. Some scooters also have a handbrake for extra stopping power`,
                     isOpen: false,
                 },
                 {
                     title: 'What if I damage my Scoot?',
-                    text: `Short answer is yes. A local or foreign motorcycle license will work fine. In Cape Town (where I live) they frequently have periods where they pull over all the motorbikes in town to do checks. So you can get away without a license, just not indefinitely.`,
+                    text: `If your checked baggage arrives damaged, you will need to report the damage within 7 days of receiving your bag. Our appointed claims adjustor, Charles Taylor Aviation, will assess the damage and attend to the claim, subsequently keeping you informed of the outcome.`,
                     isOpen: false,
                 },
             ]
