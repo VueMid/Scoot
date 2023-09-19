@@ -24,7 +24,6 @@
     position: relative;
 
     ::after {
-        z-index: -1;
         position: absolute;
         content: '';
         display: inline-block;
@@ -38,6 +37,7 @@
     }
 
     ::before {
+        z-index: 2;
         position: absolute;
         content: '';
         display: inline-block;
@@ -60,7 +60,6 @@
         position: relative;
 
         ::after {
-            z-index: -1;
             position: absolute;
             content: '';
             display: inline-block;
@@ -74,6 +73,7 @@
         }
 
         ::before {
+            z-index: 2;
             position: absolute;
             content: '';
             display: inline-block;

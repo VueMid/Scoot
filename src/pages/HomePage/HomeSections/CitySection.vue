@@ -70,7 +70,6 @@ export default {
 
     ::after {
         pointer-events: none;
-        z-index: -1;
         transform: rotate(180deg);
         position: absolute;
         content: '';
@@ -84,6 +83,7 @@ export default {
     }
 
     ::before {
+        z-index: 2;
         pointer-events: none;
         position: absolute;
         content: '';
@@ -108,7 +108,6 @@ export default {
         ::after {
             pointer-events: none;
             margin-top: 130px;
-            z-index: -1;
             transform: rotate(180deg);
             position: absolute;
             content: '';
@@ -122,6 +121,7 @@ export default {
         }
 
         ::before {
+            z-index: 2;
             pointer-events: none;
             position: absolute;
             content: '';

@@ -71,7 +71,6 @@ export default {
     ::after {
         pointer-events: none;
         margin-top: 150px;
-        z-index: -1;
         content: '';
         position: absolute;
         display: inline-block;
@@ -84,6 +83,7 @@ export default {
     }
 
     ::before {
+        z-index: 2;
         pointer-events: none;
         content: '';
         position: absolute;
@@ -108,7 +108,6 @@ export default {
         ::after {
             pointer-events: none;
             margin-top: 120px;
-            z-index: -1;
             content: '';
             position: absolute;
             display: inline-block;
@@ -121,6 +120,7 @@ export default {
         }
 
         ::before {
+            z-index: 2;
             pointer-events: none;
             content: '';
             position: absolute;

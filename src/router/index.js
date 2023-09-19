@@ -21,11 +21,6 @@ const router = createRouter({
       name: 'location',
       component: () => import('../pages/LocationPage/LocationPage.vue'),
     },
-    {
-      path: '/careers',
-      name: 'careers',
-      component: () => import('../pages/CareersPage/CareersPage.vue'),
-    },
   ]
 })
 export default router

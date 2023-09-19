@@ -12,7 +12,7 @@
                         Locate with app
                     </h4>
                     <p
-                        class="scooter__texts text-center w-max-[311px] text-[15px] leading-[25px] text-dim-grey md:w-[398px] md:text-start xl:w-[350px] dark:text-white/70">
+                        class="scooter__texts text-center w-max-[311px] text-[15px] leading-[25px] text-dim-grey md:w-[398px] md:text-start xl:w-[350px]">
                         Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas
                         with most demand, so one should never be too far away.
                     </p>
@@ -28,7 +28,7 @@
                         Pick your scooter
                     </h4>
                     <p
-                        class="scooter__texts text-center w-max-[311px] text-[15px] leading-[25px] text-dim-grey md:w-[398px] md:text-start xl:w-[350px] dark:text-white/70">
+                        class="scooter__texts text-center w-max-[311px] text-[15px] leading-[25px] text-dim-grey md:w-[398px] md:text-start xl:w-[350px]">
                         We show the most important info for the scooters closest to you. So you know how much charge they
                         have left and can see roughly how much it will cost.
                     </p>
@@ -44,7 +44,7 @@
                         Enjoy the ride
                     </h4>
                     <p
-                        class="scooter__texts text-center w-max-[311px] text-[15px] leading-[25px] text-dim-grey md:w-[398px] md:text-start xl:w-[350px] dark:text-white/70">
+                        class="scooter__texts text-center w-max-[311px] text-[15px] leading-[25px] text-dim-grey md:w-[398px] md:text-start xl:w-[350px]">
                         Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re
                         off!
                         Always lock bikes away from walkways and accessibility ramps.

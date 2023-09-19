@@ -1,4 +1,8 @@
 export default [{
+        name: 'Home',
+        link: '/'
+    },
+    {
         name: 'About',
         link: '/about'
     },
@@ -6,8 +10,4 @@ export default [{
         name: 'Location',
         link: '/location'
     },
-    {
-        name: 'Careers',
-        link: '/careers'
-    }
 ]

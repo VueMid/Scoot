@@ -23,7 +23,6 @@
     position: relative;
 
     ::after {
-        z-index: -1;
         transform: rotate(180deg);
         position: absolute;
         content: '';
@@ -38,6 +37,7 @@
     }
 
     ::before {
+        z-index: 2;
         position: absolute;
         content: '';
         display: inline-block;
@@ -60,7 +60,6 @@
         position: relative;
 
         ::after {
-            z-index: -1;
             transform: rotate(180deg);
             position: absolute;
             content: '';
@@ -75,6 +74,7 @@
         }
 
         ::before {
+            z-index: 2;
             position: absolute;
             content: '';
             display: inline-block;
