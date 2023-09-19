@@ -12,66 +12,24 @@
                     How it works
                 </h5>
                 <div class="faq__main-message flex flex-col justify-center items-start gap-4 md:gap-6 xl:gap-4">
-                    <article
-                        class="faq__message bg-snow active:bg-light-yellow md:hover:bg-light-yellow px-[32px] pt-[32px] pb-[6px] md:flex md:flex-col md:justify-center md:items-start w-[280px] sm:w-[311px] md:w-[689px] xl:w-[730px]">
+                    <article v-for="(item, index) in accordionArray" :key="item"
+                        class="faq__message dark:bg-tailwind-dark-second xl:dark:hover:bg-dark-navy bg-snow xl:hover:bg-light-yellow px-[32px] pt-[32px] pb-[6px] md:flex md:flex-col md:justify-center md:items-start w-[280px] sm:w-[311px] md:w-[689px] xl:w-[730px]">
                         <div class="faq__header cursor-pointer w-full flex flex-row justify-between items-center pb-6"
-                            @click="toggleAccordion">
+                            @click="toggleAccordion(index)">
                             <h6
-                                class="faq__message-title text-dark-navy font-bold text-lg leading-6 tracking-tighter-[-0.804px] md:text-[24px] md:leading-7 md:tracking-tighter-[-1.071px]">
-                                How do I download the app?
+                                class="faq__message-title dark:text-white text-dark-navy font-bold text-lg leading-6 tracking-tighter-[-0.804px] md:text-[24px] md:leading-7 md:tracking-tighter-[-1.071px] relative z-10">
+                                {{ item.title }}
                             </h6>
                             <i class="cursor-pointer fa-solid fa-angle-up fa-xl"
-                                :class="[isOpen === true ? 'rotate-0' : 'rotate-180']" style="color: #fcb72b;"></i>
+                                :class="[item.isOpen === true ? 'rotate-0' : 'rotate-180']" style="color: #fcb72b;"></i>
                         </div>
-                        <div class="faq__body" :class="accordionClasses">
+                        <div class="faq__body" v-if="item.isOpen">
                             <p
-                                class="faq__text text-dark-navy text-[15px] leading-[25px] mb-[32px] max-w-[251px] md:max-w-[617px] xl:w-[650px]">
-                                To download the Scoot app, you can search “Scoot” in both the App and Google Play
-                                stores. An even simpler way to do it would be to click the relevant link at the
-                                bottom
-                                of this page and you’ll be re-directed to the correct page.
+                                class="faq__text text-dark-navy text-[15px] leading-[25px] mb-[32px] max-w-[251px] md:max-w-[617px] xl:w-[650px] dark:text-white">
+                                {{ item.text }}
                             </p>
                         </div>
-                    </article>
-                    <article
-                        class="faq__message bg-snow active:bg-light-yellow md:hover:bg-light-yellow px-[32px] pt-[32px] pb-[6px] md:flex md:flex-col md:justify-center md:items-start w-[280px] sm:w-[311px] md:w-[689px] xl:w-[730px]">
-                        <div class="faq__header cursor-pointer w-full flex flex-row justify-between items-center pb-6"
-                            @click="toggleAccordionSecond">
-                            <h6
-                                class="faq__message-title text-dark-navy font-bold text-lg leading-6 tracking-tighter-[-0.804px] md:text-[24px] md:leading-7 md:tracking-tighter-[-1.071px]">
-                                Can I find a nearby Scoots?
-                            </h6>
-                            <i class="cursor-pointer fa-solid fa-angle-up fa-xl"
-                                :class="[wasOpen === true ? 'rotate-0' : 'rotate-180']" style="color: #fcb72b;"></i>
-                        </div>
-                        <div class="faq__body" :class="accordionClassesSecond">
-                            <p
-                                class="faq__text text-dark-navy text-[15px] leading-[25px] mb-[32px] max-w-[251px] md:max-w-[617px] xl:w-[650px]">
-                                Scoot web page scoot map makes it easy for users to find and use nearby scooters. Scoot does
-                                not matter where you are, it works everywhere you use this web site
-                            </p>
-                        </div>
-                    </article>
-                    <article
-                        class="faq__message bg-snow active:bg-light-yellow md:hover:bg-light-yellow px-[32px] pt-[32px] pb-[6px] md:flex md:flex-col md:justify-center md:items-start w-[280px] sm:w-[311px] md:w-[689px] xl:w-[730px]">
-                        <div class="faq__header cursor-pointer w-full flex flex-row justify-between items-center pb-6"
-                            @click="toggleAccordionThird">
-                            <h6
-                                class="faq__message-title text-dark-navy font-bold text-lg leading-6 tracking-tighter-[-0.804px] md:text-[24px] md:leading-7 md:tracking-tighter-[-1.071px]">
-                                Do I need a license to ride?
-                            </h6>
-                            <i class="cursor-pointer fa-solid fa-angle-up fa-xl"
-                                :class="[wasOpenSecond === true ? 'rotate-0' : 'rotate-180']" style="color: #fcb72b;"></i>
-                        </div>
-                        <div class="faq__body" :class="accordionClassesThird">
-                            <p
-                                class="faq__text text-dark-navy text-[15px] leading-[25px] mb-[32px] max-w-[251px] md:max-w-[617px] xl:w-[650px]">
-                                Short answer is yes. A local or foreign motorcycle license will work fine. In Cape
-                                Town (where I live) they frequently have periods where they pull over all the
-                                motorbikes in town to do checks. So you can get away without a license, just not
-                                indefinitely.
-                            </p>
-                        </div>
+
                     </article>
                 </div>
             </div>
@@ -83,40 +41,37 @@ export default {
     data() {
         return {
             isOpen: true,
-            wasOpen: true,
-            wasOpenSecond: true,
+            accordionArray: [
+                {
+                    title: 'How do I download the app?',
+                    text: `To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.`,
+                    isOpen: false,
+                },
+                {
+                    title: 'Can I find a nearby Scoots?',
+                    text: `Scoot web page scoot map makes it easy for users to find and use nearby scooters. Scoot does not matter where you are, it works everywhere you use this web site`,
+                    isOpen: false,
+                },
+                {
+                    title: 'Do I need a license to ride?',
+                    text: `Short answer is yes. A local or foreign motorcycle license will work fine. In Cape Town (where I live) they frequently have periods where they pull over all the motorbikes in town to do checks. So you can get away without a license, just not indefinitely.`,
+                    isOpen: false,
+                },
+            ]
         }
 
     },
     methods: {
-        toggleAccordion() {
-            this.isOpen = !this.isOpen;
-        },
-        toggleAccordionSecond() {
-            this.wasOpen = !this.wasOpen;
-        },
-        toggleAccordionThird() {
-            this.wasOpenSecond = !this.wasOpenSecond;
-        },
-    },
-    computed: {
-        accordionClasses() {
-            return {
-                'hidden': this.isOpen,
-            }
-        },
-        accordionClassesSecond() {
-            return {
-                'hidden': this.wasOpen,
-            }
-        },
-        accordionClassesThird() {
-            return {
-
-                'hidden': this.wasOpenSecond,
-            }
+        toggleAccordion(index) {
+            this.accordionArray.forEach((item, idx) => {
+                if (idx === index) {
+                    item.isOpen = !item.isOpen;
+                } else {
+                    item.isOpen = false;
+                }
+            });
         }
-    }
+    },
 }
 </script>
 <style lang="scss">

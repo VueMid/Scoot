@@ -17,6 +17,17 @@
     background-size: cover;
 }
 
+@media(max-width: 1023px) {
+    .about {
+        width: 100%;
+        transform: translateY(97px);
+        background-image: url('@/assets/images/about__background.png');
+        background-position: center right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
 @media(max-width: 820px) {
     .about {
         width: 100%;
