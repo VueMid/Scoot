@@ -9,7 +9,7 @@
                     Mobility for the digital era
                 </h3>
                 <p
-                    class="mobility__text w-max-[311px] text-center dark:text-white text-dim-grey text-[15px] font-normal leading-[25px] mt-8 md:w-[573px] md:mt-10 lg:w-[445px] lg:text-start lg:mt-6">
+                    class="mobility__text w-max-[311px] text-center dark:text-white/70 text-dim-grey text-[15px] font-normal leading-[25px] mt-8 md:w-[573px] md:mt-10 lg:w-[445px] lg:text-start lg:mt-6">
                     Getting around should be simple (and even fun!) for everyone. We embrace technology to provide low cost,
                     smart access to scooters at your fingertips.
                 </p>

@@ -9,7 +9,7 @@
                     Better urban living
                 </h3>
                 <p
-                    class="urban__text w-max-[311px] text-center dark:text-white text-dim-grey text-[15px] font-normal leading-[25px] mt-8 md:w-[573px] md:mt-10 lg:w-[445px] lg:text-start lg:mt-6">
+                    class="urban__text w-max-[311px] text-center dark:text-white/70 text-dim-grey text-[15px] font-normal leading-[25px] mt-8 md:w-[573px] md:mt-10 lg:w-[445px] lg:text-start lg:mt-6">
                     We’re helping connect cities and bring people closer together. Our scooters are also fully-electric and
                     we offset the minimal carbon footprint for each ride.
                 </p>

@@ -14,7 +14,7 @@
                         class="value__titles w-[311px] dark:text-white text-dark-navy text-center text-2xl font-bold leading-7 mt-4 md:w-[457px] md:mt-8 lg:w-[350px]">
                         Our tech</h5>
                     <p
-                        class="value__text w-[311px] dark:text-white text-center text-dim-grey text-[15px] leading-[25px] mt-[27px] md:w-[457px] lg:w-[350px]">
+                        class="value__text w-[311px] dark:text-white/70 text-center text-dim-grey text-[15px] leading-[25px] mt-[27px] md:w-[457px] lg:w-[350px]">
                         We’re using cutting edge technology to drive accessible urban transportation forward. Our fully
                         electric
                         scooters are a joy to ride!
@@ -27,7 +27,7 @@
                         class="value__titles w-[311px] dark:text-white text-dark-navy text-center text-2xl font-bold leading-7 mt-4 md:w-[457px] md:mt-8 lg:w-[350px]">
                         Our integrity</h5>
                     <p
-                        class="value__text w-[311px] dark:text-white text-center text-dim-grey text-[15px] leading-[25px] mt-[27px] md:w-[457px] lg:w-[350px]">
+                        class="value__text w-[311px] dark:text-white/70 text-center text-dim-grey text-[15px] leading-[25px] mt-[27px] md:w-[457px] lg:w-[350px]">
                         We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every
                         city
                         we serve.
@@ -40,7 +40,7 @@
                         class="value__titles w-[311px] dark:text-white text-dark-navy text-center text-2xl font-bold leading-7 mt-4 md:w-[457px] md:mt-8 lg:w-[350px]">
                         Our community</h5>
                     <p
-                        class="value__text w-[311px] dark:text-white text-center text-dim-grey text-[15px] leading-[25px] mt-[27px] md:w-[457px] lg:w-[350px]">
+                        class="value__text w-[311px] dark:text-white/70 text-center text-dim-grey text-[15px] leading-[25px] mt-[27px] md:w-[457px] lg:w-[350px]">
                         We uses local workforce with neighborhood organizations to greatly improve the overall growth and
                         improve urban living.
                     </p>

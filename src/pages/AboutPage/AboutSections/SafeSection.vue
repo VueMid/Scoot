@@ -22,11 +22,10 @@
                         </div>
                         <div class="safe__body" v-if="item.isOpen">
                             <p
-                                class="safe__text text-dark-navy text-[15px] leading-[25px] mb-[32px] max-w-[251px] md:max-w-[617px] xl:w-[650px] dark:text-white">
+                                class="safe__text text-dark-navy text-[15px] leading-[25px] mb-[32px] max-w-[251px] md:max-w-[617px] xl:w-[650px] dark:text-white/70">
                                 {{ item.text }}
                             </p>
                         </div>
-
                     </article>
                 </div>
             </div>
