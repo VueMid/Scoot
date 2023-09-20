@@ -20,7 +20,7 @@
             </div>
             <div
                 class="scooter__boxes flex flex-col justify-center items-center gap-6 md:flex md:flex-row md:justify-center md:items-start md:gap-20 x:flex xl:flex-col xl:justify-center xl:gap-10">
-                <img class="scooter__images w-max-[56px] md:w-[96px]  " src="@/assets/icons/scoot.svg" alt="scoot">
+                <img class="scooter__images w-max-[56px] md:w-[96px]" src="@/assets/icons/scoot.svg" alt="scoot">
                 <div
                     class="scooter__mini-boxes flex flex-col justify-center items-center gap-6 md:flex md:flex-col md:justify-center md:items-start md:gap-[17px] xl:flex xl:gap-[27px]">
                     <h4
@@ -36,7 +36,7 @@
             </div>
             <div
                 class="scooter__boxes flex flex-col justify-center items-center gap-6 md:flex md:flex-row md:justify-center md:items-start md:gap-20 x:flex xl:flex-col xl:justify-center xl:gap-10">
-                <img class="scooter__images w-max-[56px] md:w-[96px]  " src="@/assets/icons/scooter.svg" alt="scooter">
+                <img class="scooter__images w-max-[56px] md:w-[96px]" src="@/assets/icons/scooter.svg" alt="scooter">
                 <div
                     class="scooter__mini-boxes flex flex-col justify-center items-center gap-6 md:flex md:flex-col md:justify-center md:items-start md:gap-[17px] xl:flex xl:gap-[27px]">
                     <h4

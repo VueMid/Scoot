@@ -1,11 +1,11 @@
 <template>
-    <div class="faq__main-message flex flex-col justify-center items-start gap-4 md:gap-6 xl:gap-4">
+    <div class="safe__main-message flex flex-col justify-center items-start gap-4 md:gap-6 xl:gap-4">
         <article v-for="(item, index) in accordionArray" :key="item"
-            class="faq__message dark:bg-tailwind-dark-second xl:dark:hover:bg-dark-navy bg-snow xl:hover:bg-light-yellow px-[32px] pt-[32px] pb-[6px] md:flex md:flex-col md:justify-center md:items-start w-[280px] sm:w-[311px] md:w-[689px] xl:w-[730px]">
-            <div class="faq__header cursor-pointer w-full flex flex-row justify-between items-center pb-6"
+            class="safe__message dark:bg-tailwind-dark-second xl:dark:hover:bg-dark-navy bg-snow xl:hover:bg-light-yellow px-[32px] pt-[32px] pb-[6px] md:flex md:flex-col md:justify-center md:items-start w-[280px] sm:w-[311px] md:w-[689px] xl:w-[730px]">
+            <div class="safe__header cursor-pointer w-full flex flex-row justify-between items-center pb-6"
                 @click="myMethod(index)">
                 <h6
-                    class="faq__question dark:text-white text-dark-navy font-bold text-lg leading-6 tracking-tighter-[-0.804px] md:text-[24px] md:leading-7 md:tracking-tighter-[-1.071px] relative z-10">
+                    class="safe__question dark:text-white text-dark-navy font-bold text-lg leading-6 tracking-tighter-[-0.804px] md:text-[24px] md:leading-7 md:tracking-tighter-[-1.071px] relative z-10">
                     {{ item.question }}
                 </h6>
                 <i class="cursor-pointer fa-solid fa-angle-up fa-xl"
@@ -37,7 +37,7 @@ export default {
 }
 </script>
 <style>
-.faq__answer {
+.safe__answer {
     font-family: 'Lexend Deca';
 }
 
