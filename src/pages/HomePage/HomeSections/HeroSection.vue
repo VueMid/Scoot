@@ -71,7 +71,7 @@ export default {
     background-size: cover;
     position: relative;
 
-    &::after {
+    ::after {
         pointer-events: none;
         position: absolute;
         content: '';
@@ -84,7 +84,7 @@ export default {
         background-repeat: no-repeat;
     }
 
-    &::before {
+    ::before {
         pointer-events: none;
         position: absolute;
         content: '';
@@ -111,7 +111,7 @@ export default {
         background-size: cover;
         position: relative;
 
-        &::after {
+        ::after {
             pointer-events: none;
             transform: rotate(180deg);
             position: absolute;
@@ -126,7 +126,7 @@ export default {
             background-repeat: no-repeat;
         }
 
-        &::before {
+        ::before {
             pointer-events: none;
             position: absolute;
             content: '';
@@ -154,7 +154,7 @@ export default {
         background-size: cover;
         position: relative;
 
-        &::after {
+        ::after {
             pointer-events: none;
             transform: rotate(180deg);
             position: absolute;
@@ -169,7 +169,7 @@ export default {
             background-repeat: no-repeat;
         }
 
-        &::before {
+        ::before {
             pointer-events: none;
             position: absolute;
             content: '';
@@ -197,7 +197,7 @@ export default {
         background-size: cover;
         position: relative;
 
-        &::after {
+        ::after {
             pointer-events: none;
             position: absolute;
             content: '';
@@ -210,7 +210,7 @@ export default {
             background-repeat: no-repeat;
         }
 
-        &::before {
+        ::before {
             pointer-events: none;
             position: absolute;
             content: '';
@@ -234,7 +234,7 @@ export default {
         background-size: cover;
         position: relative;
 
-        &::after {
+        ::after {
             pointer-events: none;
             position: absolute;
             content: '';
@@ -247,7 +247,7 @@ export default {
             background-repeat: no-repeat;
         }
 
-        &::before {
+        ::before {
             pointer-events: none;
             position: absolute;
             content: '';
@@ -260,4 +260,5 @@ export default {
             background-repeat: no-repeat;
         }
     }
-}</style>
+}
+</style>

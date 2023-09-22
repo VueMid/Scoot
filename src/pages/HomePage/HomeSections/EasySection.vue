@@ -2,22 +2,22 @@
     <section class="easy">
         <div
             class="container easy__container flex flex-col justify-center items-center pt-[120px] md:pt-[145px] lg:flex lg:flex-row-reverse lg:justify-between lg:items-center lg:pt-[200px]">
-            <img class="easy__image rounded-[50%] w-max-[311px] md:w-[445px] duration-200"
-                src="@/assets/images/guy__holding-phone.png" alt="guy__holding-phone">
+            <img class="easy__image rounded-[50%] w-max-[311px] md:w-[445px] duration-[400ms] target"
+                v-motion-slide-visible-once-bottom src="@/assets/images/guy__holding-phone.png" alt="guy__holding-phone">
             <div
                 class="easy__box flex flex-col justify-center items-center lg:flex-col lg:justify-center lg:items-start duration-200">
-                <h3
-                    class="easy__title w-max-[314px] text-dark-navy text-center text-[32px] font-bold leading-8 mt-14 md:w-[471px] md:text-5xl md:leading-[48px] lg:w-[471px] lg:text-5xl lg:text-start lg:mt-0 dark:text-white">
+                <h3 class="easy__title w-max-[314px] text-dark-navy text-center text-[32px] font-bold leading-8 mt-14 md:w-[471px] md:text-5xl md:leading-[48px] lg:w-[471px] lg:text-5xl lg:text-start lg:mt-0 dark:text-white target duration-[400ms]"
+                    v-motion-slide-visible-once-left>
                     Easy to use riding telemetry
                 </h3>
-                <p
-                    class="easy__text w-max-[311px] text-dim-grey text-center text-[15px] font-normal leading-[25px] mt-8 md:w-[573px] md:mt-10 lg:w-[445px] lg:text-start lg:mt-6 dark:text-white/70">
+                <p class="easy__text w-max-[311px] text-dim-grey text-center text-[15px] font-normal leading-[25px] mt-8 md:w-[573px] md:mt-10 lg:w-[445px] lg:text-start lg:mt-6 dark:text-white/70 target duration-[600ms]"
+                    v-motion-slide-visible-once-left>
                     The Scoot app is available with riding telemetry. This means it can show you your average speed, how
                     long you've been using the scooter, your traveling distance, and many more things all in an easy to use
                     app.
                 </p>
-                <TheButton class="easy__button mt-8 md:mt-10" data-modal-target="staticModal"
-                    data-modal-toggle="staticModal" type="button" @click="openModal">
+                <TheButton class="easy__button mt-8 md:mt-10 target duration-[800ms]" v-motion-slide-visible-once-left
+                    data-modal-target="staticModal" data-modal-toggle="staticModal" type="button" @click="openModal">
                     Learn More
                 </TheButton>
             </div>
