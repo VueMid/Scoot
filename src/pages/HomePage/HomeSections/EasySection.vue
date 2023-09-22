@@ -2,9 +2,10 @@
     <section class="easy">
         <div
             class="container easy__container flex flex-col justify-center items-center pt-[120px] md:pt-[145px] lg:flex lg:flex-row-reverse lg:justify-between lg:items-center lg:pt-[200px]">
-            <img class="easy__image rounded-[50%] w-max-[311px] md:w-[445px]" src="@/assets/images/guy__holding-phone.png"
-                alt="guy__holding-phone">
-            <div class="easy__box flex flex-col justify-center items-center lg:flex-col lg:justify-center lg:items-start">
+            <img class="easy__image rounded-[50%] w-max-[311px] md:w-[445px] duration-200"
+                src="@/assets/images/guy__holding-phone.png" alt="guy__holding-phone">
+            <div
+                class="easy__box flex flex-col justify-center items-center lg:flex-col lg:justify-center lg:items-start duration-200">
                 <h3
                     class="easy__title w-max-[314px] text-dark-navy text-center text-[32px] font-bold leading-8 mt-14 md:w-[471px] md:text-5xl md:leading-[48px] lg:w-[471px] lg:text-5xl lg:text-start lg:mt-0 dark:text-white">
                     Easy to use riding telemetry
@@ -68,7 +69,7 @@ export default {
 .easy {
     position: relative;
 
-    ::after {
+    &::after {
         z-index: 2;
         pointer-events: none;
         position: absolute;
@@ -82,7 +83,7 @@ export default {
         background-repeat: no-repeat;
     }
 
-    ::before {
+    &::before {
         pointer-events: none;
         position: absolute;
         content: '';
@@ -104,7 +105,7 @@ export default {
     .easy {
         position: relative;
 
-        ::after {
+        &::after {
             z-index: 2;
             pointer-events: none;
             position: absolute;
@@ -118,7 +119,7 @@ export default {
             background-repeat: no-repeat;
         }
 
-        ::before {
+        &::before {
             pointer-events: none;
             margin-top: 130px;
             position: absolute;
@@ -138,7 +139,7 @@ export default {
     .easy {
         position: relative;
 
-        ::after {
+        &::after {
             pointer-events: none;
             position: absolute;
             content: '';
@@ -152,7 +153,7 @@ export default {
             background-repeat: no-repeat;
         }
 
-        ::before {
+        &::before {
             pointer-events: none;
             z-index: -1;
             position: absolute;

@@ -68,7 +68,7 @@ export default {
 .wallet {
     position: relative;
 
-    ::after {
+    &::after {
         pointer-events: none;
         margin-top: 150px;
         content: '';
@@ -82,7 +82,7 @@ export default {
         background-repeat: no-repeat;
     }
 
-    ::before {
+    &::before {
         z-index: 2;
         pointer-events: none;
         content: '';
@@ -105,7 +105,7 @@ export default {
     .wallet {
         position: relative;
 
-        ::after {
+        &::after {
             pointer-events: none;
             margin-top: 120px;
             content: '';
@@ -119,7 +119,7 @@ export default {
             background-repeat: no-repeat;
         }
 
-        ::before {
+        &::before {
             z-index: 2;
             pointer-events: none;
             content: '';
@@ -139,7 +139,7 @@ export default {
     .wallet {
         position: relative;
 
-        ::after {
+        &::after {
             pointer-events: none;
             z-index: -1;
             content: '';
@@ -153,7 +153,7 @@ export default {
             background-repeat: no-repeat;
         }
 
-        ::before {
+        &::before {
             pointer-events: none;
             content: '';
             position: absolute;
@@ -167,5 +167,4 @@ export default {
             background-repeat: no-repeat;
         }
     }
-}
-</style>
+}</style>

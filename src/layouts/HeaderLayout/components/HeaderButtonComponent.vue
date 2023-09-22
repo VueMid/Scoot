@@ -3,7 +3,7 @@
         class="z-[1111] fixed top-0 left-0 right-0 w-full p-4 overflow-x-hidden overflow-y-auto h-full max-h-full bg-black/50 flex justify-center items-center lg:px-[0px]">
         <div
             class="w-full max-w-sm p-4 bg-white border border-gray-200 shadow sm:p-6 md:p-8 dark:bg-tailwind-dark dark:border-gray-700 z-[1111] relative">
-            <form class="space-y-6" action="#">
+            <form class="space-y-6" action="#" @submit.prevent="formValidated">
                 <h5 class="text-xl font-medium text-gray-900 dark:text-white title">Welcome to Scoot</h5>
                 <div>
                     <button type="button" @click="$emit('closeModal')"
@@ -18,7 +18,7 @@
                     <label for="text" class="block text mb-2 text-sm font-medium text-gray-900 dark:text-white">
                         Your full-name
                     </label>
-                    <input type="text" name="text" id="text"
+                    <input type="text" name="text" id="text" v-model="fullname"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                         placeholder="Turabov Umidjon" required>
                 </div>
@@ -26,7 +26,7 @@
                     <label for="email" class="block text mb-2 text-sm font-medium text-gray-900 dark:text-white">
                         Your email
                     </label>
-                    <input type="email" name="email" id="email"
+                    <input type="email" name="email" id="email" v-model="email"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                         placeholder="scoot@company.com" required>
                 </div>
@@ -34,7 +34,7 @@
                     <label for="tel" class="block text mb-2 text-sm font-medium text-gray-900 dark:text-white">
                         Your number
                     </label>
-                    <input type="tel" name="tel" id="tel"
+                    <input type="tel" name="tel" id="tel" v-model="tel"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                         placeholder="(+998)" required>
                 </div>
@@ -46,6 +46,30 @@
         </div>
     </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            fullname: '',
+            email: '',
+            tel: '',
+        }
+    },
+    watch: {
+        tel(val) {
+            if (val) {
+                const str = String(val)
+                this.tel = str.replace(/\D/g, '')
+            }
+        }
+    },
+    methods: {
+        formValidated() {
+
+        }
+    },
+}
+</script>
 <style>
 .title {
     font-family: 'Space Mono';

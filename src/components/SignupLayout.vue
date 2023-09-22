@@ -22,7 +22,7 @@
 .signup {
     position: relative;
 
-    ::after {
+    &::after {
         pointer-events: none;
         z-index: 1;
         position: absolute;
@@ -54,7 +54,7 @@
         background-repeat: no-repeat;
         background-size: cover;
 
-        ::after {
+        &::after {
             pointer-events: none;
             z-index: 1;
             position: absolute;
@@ -86,7 +86,7 @@
         background-repeat: no-repeat;
         background-size: cover;
 
-        ::after {
+        &::after {
             pointer-events: none;
             z-index: 1;
             position: absolute;

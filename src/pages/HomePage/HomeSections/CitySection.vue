@@ -68,7 +68,7 @@ export default {
 .city {
     position: relative;
 
-    ::after {
+    &::after {
         pointer-events: none;
         transform: rotate(180deg);
         position: absolute;
@@ -82,7 +82,7 @@ export default {
         background-repeat: no-repeat;
     }
 
-    ::before {
+    &::before {
         z-index: 2;
         pointer-events: none;
         position: absolute;
@@ -105,7 +105,7 @@ export default {
     .city {
         position: relative;
 
-        ::after {
+        &::after {
             pointer-events: none;
             margin-top: 130px;
             transform: rotate(180deg);
@@ -120,7 +120,7 @@ export default {
             background-repeat: no-repeat;
         }
 
-        ::before {
+        &::before {
             z-index: 2;
             pointer-events: none;
             position: absolute;
@@ -140,7 +140,7 @@ export default {
     .city {
         position: relative;
 
-        ::after {
+        &::after {
             pointer-events: none;
             z-index: -1;
             transform: rotate(180deg);
@@ -155,7 +155,7 @@ export default {
             background-repeat: no-repeat;
         }
 
-        ::before {
+        &::before {
             pointer-events: none;
             position: absolute;
             content: '';

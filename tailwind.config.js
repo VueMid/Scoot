@@ -13,6 +13,7 @@ export default {
         'darker-yellow': '#FCB72B',
         'dark-navy': '#495567',
         'dim-grey': '#939CAA',
+        'darker-grey': '#88939E',
         'light-grey': '#E5ECF4',
         'snow': '#F2F5F9',
         'light-yellow': '#FFF4DF',

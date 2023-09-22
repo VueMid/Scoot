@@ -1,7 +1,6 @@
 <template>
     <section class="scooter">
-        <div
-            class="container scooter__container flex flex-col justify-center items-center gap-12 mt-[190px] md:flex md:flex-col md:justify-center md:items-center md:mt-[192px] md:gap-10 xl:flex xl:flex-row xl:justify-between xl:items-center xl:gap-0px xl:mt-[160px]">
+        <div class="container scooter__container flex flex-col justify-center items-center gap-12 mt-[190px] md:flex md:flex-col md:justify-center md:items-center md:mt-[192px] md:gap-10 xl:flex xl:flex-row xl:justify-between xl:items-center xl:gap-0px xl:mt-[160px]">
             <div
                 class="scooter__boxes flex flex-col justify-center items-center gap-6 md:flex md:flex-row md:justify-center md:items-start md:gap-20 x:flex xl:flex-col xl:justify-center xl:gap-10">
                 <img class="scooter__images w-max-[56px] md:w-[96px]" src="@/assets/icons/phone.svg" alt="mobile">
@@ -65,7 +64,7 @@
     .scooter {
         position: relative;
 
-        ::before {
+        &::before {
             z-index: -1;
             position: absolute;
             content: '';
@@ -88,7 +87,7 @@
     .scooter {
         position: relative;
 
-        ::before {
+        &::before {
             z-index: -1;
             position: absolute;
             content: '';
@@ -107,7 +106,7 @@
     .scooter {
         position: relative;
 
-        ::before {
+        &::before {
             z-index: -1;
             position: absolute;
             content: '';
@@ -123,7 +122,7 @@
         &__mini-boxes {
             position: relative;
 
-            ::before {
+            &::before {
                 z-index: -1;
                 position: absolute;
                 content: '';

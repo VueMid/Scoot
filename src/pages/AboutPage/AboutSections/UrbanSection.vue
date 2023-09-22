@@ -22,7 +22,7 @@
 .urban {
     position: relative;
 
-    ::after {
+    &::after {
         transform: rotate(180deg);
         position: absolute;
         content: '';
@@ -36,7 +36,7 @@
         background-repeat: no-repeat;
     }
 
-    ::before {
+    &::before {
         z-index: 2;
         position: absolute;
         content: '';
@@ -59,7 +59,7 @@
     .urban {
         position: relative;
 
-        ::after {
+        &::after {
             transform: rotate(180deg);
             position: absolute;
             content: '';
@@ -73,7 +73,7 @@
             background-repeat: no-repeat;
         }
 
-        ::before {
+        &::before {
             z-index: 2;
             position: absolute;
             content: '';
@@ -93,7 +93,7 @@
     .urban {
         position: relative;
 
-        ::after {
+        &::after {
             z-index: -1;
             transform: rotate(180deg);
             position: absolute;
@@ -108,7 +108,7 @@
             background-repeat: no-repeat;
         }
 
-        ::before {
+        &::before {
             position: absolute;
             content: '';
             display: inline-block;

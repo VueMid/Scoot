@@ -23,7 +23,7 @@
 .mobility {
     position: relative;
 
-    ::after {
+    &::after {
         position: absolute;
         content: '';
         display: inline-block;
@@ -36,7 +36,7 @@
         background-repeat: no-repeat;
     }
 
-    ::before {
+    &::before {
         z-index: 2;
         position: absolute;
         content: '';
@@ -59,7 +59,7 @@
     .mobility {
         position: relative;
 
-        ::after {
+        &::after {
             position: absolute;
             content: '';
             display: inline-block;
@@ -72,7 +72,7 @@
             background-repeat: no-repeat;
         }
 
-        ::before {
+        &::before {
             z-index: 2;
             position: absolute;
             content: '';
@@ -96,7 +96,7 @@
     .mobility {
         position: relative;
 
-        ::after {
+        &::after {
             z-index: -1;
             transform: rotate(180deg);
             position: absolute;
@@ -111,7 +111,7 @@
             background-repeat: no-repeat;
         }
 
-        ::before {
+        &::before {
             transform: rotate(180deg);
             position: absolute;
             content: '';
