@@ -2,21 +2,21 @@
     <section class="wallet">
         <div
             class="container wallet__container flex flex-col justify-center items-center pt-[120px] pb-[120px] md:pb-[104px]lg:flex lg:flex-row-reverse lg:justify-between lg:items-center lg:pt-[150px] lg:pb-[180px]">
-            <img class="wallet__image rounded-[50%] w-max-[311px] md:w-[445px] duration-[400ms] target"
-                v-motion-slide-visible-once-bottom src="@/assets/images/wallet.png" alt="guy__holding-phone">
+            <img class="wallet__image rounded-[50%] w-max-[311px] md:w-[445px]" src="@/assets/images/wallet.png"
+                alt="guy__holding-phone">
             <div class="wallet__box flex flex-col justify-center items-center lg:flex-col lg:justify-center lg:items-start">
-                <h3 class="wallet__title w-max-[314px] text-dark-navy text-center text-[32px] font-bold leading-8 mt-16 md:w-[471px] md:text-5xl md:leading-[48px] md:mt-16 lg:w-[471px] lg:text-5xl lg:text-start lg:mt-0 dark:text-white duration-[400ms] target"
-                    v-motion-slide-visible-once-left>
+                <h3
+                    class="wallet__title w-max-[314px] text-dark-navy text-center text-[32px] font-bold leading-8 mt-16 md:w-[471px] md:text-5xl md:leading-[48px] md:mt-16 lg:w-[471px] lg:text-5xl lg:text-start lg:mt-0 dark:text-white">
                     Zero hassle payments
                 </h3>
-                <p class="wallet__text w-max-[311px] text-dim-grey dark:text-white/70 text-center text-[15px] font-normal leading-[25px] mt-8 md:w-[573px] md:mt-10 lg:w-[445px] lg:text-start lg:mt-6 duration-[600ms] target"
-                    v-motion-slide-visible-once-left>
+                <p
+                    class="wallet__text w-max-[311px] text-dim-grey dark:text-white/70 text-center text-[15px] font-normal leading-[25px] mt-8 md:w-[573px] md:mt-10 lg:w-[445px] lg:text-start lg:mt-6">
                     Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link
                     your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a
                     month.
                 </p>
-                <TheButton class="wallet__button mt-8 md:mt-10 duration-[800ms] target" v-motion-slide-visible-once-left
-                    data-modal-target="staticModal" data-modal-toggle="staticModal" type="button" @click="openModal">
+                <TheButton class="wallet__button mt-8 md:mt-10" data-modal-target="staticModal"
+                    data-modal-toggle="staticModal" type="button" @click="openModal">
                     Learn More
                 </TheButton>
             </div>
