@@ -3,8 +3,8 @@
         <HeroSection />
         <ScooterSection />
         <EasySection />
-        <CitySection />
-        <WalletSection />
+        <!-- <CitySection /> -->
+        <!-- <WalletSection /> -->
     </div>
 </template>
 <script>
