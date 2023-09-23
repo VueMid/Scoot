@@ -4,7 +4,7 @@
         <ScooterSection />
         <EasySection />
         <!-- <CitySection /> -->
-        <!-- <WalletSection /> -->
+        <WalletSection />
     </div>
 </template>
 <script>
