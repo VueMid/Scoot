@@ -2,20 +2,20 @@
     <section class="easy pt-[120px] md:pt-[145px] lg:pt-[200px]">
         <div
             class="container easy__container flex flex-col justify-center items-center  lg:flex lg:flex-row-reverse lg:justify-between lg:items-center">
-            <img class="easy__image rounded-[50%] w-max-[311px] md:w-[445px] target duration-[600ms]"
+            <img class="easy__image rounded-[50%] w-max-[311px] md:w-[445px] target duration-[800ms]"
                 v-motion-slide-visible-once-bottom src="@/assets/images/guy__holding-phone.png" alt="guy__holding-phone">
             <div class="easy__box flex flex-col justify-center items-center lg:flex-col lg:justify-center lg:items-start">
-                <h3 class="easy__title w-max-[314px] text-dark-navy text-center text-[32px] font-bold leading-8 mt-14 md:w-[471px] md:text-5xl md:leading-[48px] lg:w-[471px] lg:text-5xl lg:text-start lg:mt-0 dark:text-white target duration-[400ms]"
+                <h3 class="easy__title w-max-[314px] text-dark-navy text-center text-[32px] font-bold leading-8 mt-14 md:w-[471px] md:text-5xl md:leading-[48px] lg:w-[471px] lg:text-5xl lg:text-start lg:mt-0 dark:text-white target duration-[500ms]"
                     v-motion-slide-visible-once-left>
                     Easy to use riding telemetry
                 </h3>
-                <p class="easy__text w-max-[311px] text-dim-grey text-center text-[15px] font-normal leading-[25px] mt-8 md:w-[573px] md:mt-10 lg:w-[445px] lg:text-start lg:mt-6 dark:text-white/70 target duration-[500ms]"
+                <p class="easy__text w-max-[311px] text-dim-grey text-center text-[15px] font-normal leading-[25px] mt-8 md:w-[573px] md:mt-10 lg:w-[445px] lg:text-start lg:mt-6 dark:text-white/70 target duration-[600ms]"
                     v-motion-slide-visible-once-left>
                     The Scoot app is available with riding telemetry. This means it can show you your average speed, how
                     long you've been using the scooter, your traveling distance, and many more things all in an easy to use
                     app.
                 </p>
-                <TheButton class="easy__button mt-8 md:mt-10 target duration-[600ms]" v-motion-slide-visible-once-left
+                <TheButton class="easy__button mt-8 md:mt-10 target duration-[700ms]" v-motion-slide-visible-once-left
                     data-modal-target="staticModal" data-modal-toggle="staticModal" type="button" @click="openModal">
                     Learn More
                 </TheButton>
@@ -69,20 +69,20 @@ export default {
     position: relative;
 
     &::after {
-        z-index: 2;
         pointer-events: none;
         position: absolute;
         content: '';
         display: inline-block;
         width: 741px;
         height: 151px;
-        top: 77%;
-        right: 0;
+        top: 77.3%;
+        right: -3%;
         background-image: url('@/assets/icons/yellow__right-cursor-path.svg');
         background-repeat: no-repeat;
     }
 
     &::before {
+        z-index: -1;
         pointer-events: none;
         position: absolute;
         content: '';
@@ -105,29 +105,28 @@ export default {
         position: relative;
 
         &::after {
-            z-index: 2;
             pointer-events: none;
             position: absolute;
             content: '';
             display: inline-block;
             width: 710px;
             height: 151px;
-            top: 36%;
+            top: 46.6%;
             right: 0;
             background-image: url('@/assets/icons/yellow__right-cursor-path.svg');
             background-repeat: no-repeat;
         }
 
         &::before {
+            z-index: -1;
             pointer-events: none;
-            margin-top: 130px;
             position: absolute;
             content: '';
             display: inline-block;
             width: 101px;
             height: 445px;
-            top: 0;
-            right: 0%;
+            top: 15%;
+            right: 0;
             background-image: url('@/assets/icons/grey__circle-mask.svg');
             background-repeat: no-repeat;
         }
@@ -144,7 +143,7 @@ export default {
             content: '';
             display: inline-block;
             width: 100%;
-            max-width: 280px;
+            max-width: 330px;
             height: 151px;
             top: 33%;
             right: 0;
@@ -153,15 +152,15 @@ export default {
         }
 
         &::before {
-            pointer-events: none;
             z-index: -1;
+            pointer-events: none;
             position: absolute;
             content: '';
             display: none;
             width: 101px;
             height: 445px;
-            top: 0;
-            right: 0%;
+            top: 15%;
+            right: 0;
             background-image: url('@/assets/icons/grey__circle-mask.svg');
             background-repeat: no-repeat;
         }

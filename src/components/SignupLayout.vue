@@ -2,11 +2,11 @@
     <section class="signup bg-dark-navy">
         <div
             class="container signup__container flex flex-col justify-center items-center gap-10 py-[88px] md:py-[62px] lg:flex lg:flex-row lg:justify-between lg:items-center lg:py-[102px]">
-            <h3 class="signup__title w-max-[333px] text-white text-center text-[32px] font-bold leading-8 tracking-[-2.429px] md:w-[457px] md:text-5xl md:leading-[48px] md:tracking-[-2.143px] md:text-center lg:text-start target duration-[500ms]"
+            <h3 class="signup__title w-max-[333px] text-white text-center text-[32px] font-bold leading-8 tracking-[-2.429px] md:w-[457px] md:text-5xl md:leading-[48px] md:tracking-[-2.143px] md:text-center lg:text-start target duration-[700ms]"
                 v-motion-slide-visible-once-left>
                 Sign up and Scoot off today
             </h3>
-            <div class="signup__box-icons flex flex-row justify-center items-center gap-3 target duration-[600ms]"
+            <div class="signup__box-icons flex flex-row justify-center items-center gap-3 target duration-[700ms]"
                 v-motion-fade-visible-once>
                 <a class="signup__icon cursor-pointer" target="_blank" href="https://www.apple.com/app-store/">
                     <img class="signup__images w-max-[114px] lg:w-[159px]" src="@/assets/icons/appstore.svg" alt="appstore">
