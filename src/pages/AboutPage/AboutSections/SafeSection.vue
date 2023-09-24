@@ -1,11 +1,11 @@
 <template>
-    <section class="safe mt-[48px] md:mt-[64px] pb-[120px] xl:pb-[160px]">
+    <section class="safe mt-[48px] md:mt-[64px] pb-[120px] xl:pb-[160px] overflow-hidden">
         <div class="container safe__container flex flex-col justify-center items-center gap-12 md:gap-16">
             <!-- Bottom boxes -->
             <div
                 class="safe__bottom-box flex flex-col justify-center items-center gap-8 xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-start xl:gap-0">
-                <h5
-                    class="safe__mini-title dark:text-white text-dark-navy text-2xl font-bold leading-7 tracking-tighter-[-1.071px] md:text-[40px] md:leading-[48px] md:tracking-tighter-[-1.786px]">
+                <h5 class="safe__mini-title dark:text-white text-dark-navy text-2xl font-bold leading-7 tracking-tighter-[-1.071px] md:text-[40px] md:leading-[48px] md:tracking-tighter-[-1.786px] target duration-[500ms]"
+                    v-motion-slide-visible-once-left>
                     Safe driving
                 </h5>
                 <SafeComponent :accordionArray="accordionArray" @action="toggleAccordion" />
