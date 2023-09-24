@@ -1,5 +1,5 @@
 <template>
-    <section class="city pt-[120px] md:pt-[128px] lg:pt-[160px]">
+    <section class="city overflow-hidden pt-[120px] md:pt-[128px] lg:pt-[160px]">
         <div
             class="container city__container flex flex-col justify-center items-center lg:flex lg:flex-row lg:justify-between lg:items-center">
             <img class="city__image rounded-[50%] w-max-[311px] md:w-[445px] target duration-[800ms]"
