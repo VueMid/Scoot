@@ -1,8 +1,8 @@
 <template>
-    <section class="wallet">
+    <section class="wallet pb-[120px] md:pb-[104px] xl:pb-[200px] pt-[120px] md:pt-[145px] lg:pt-[200px]">
         <div
-            class="container wallet__container flex flex-col justify-center items-center pt-[120px] md:pt-[145px] lg:flex lg:flex-row-reverse lg:justify-between lg:items-center lg:pt-[200px]">
-            <img class="wallet__image rounded-[50%] w-max-[311px] md:w-[445px] target duration-[500ms]"
+            class="container wallet__container flex flex-col justify-center items-center lg:flex lg:flex-row-reverse lg:justify-between lg:items-center">
+            <img class="wallet__image rounded-[50%] w-max-[311px] md:w-[445px] target duration-[600ms]"
                 v-motion-slide-visible-once-bottom src="@/assets/images/wallet.png" alt="guy__holding-phone">
             <div class="wallet__box flex flex-col justify-center items-center lg:flex-col lg:justify-center lg:items-start">
                 <h3 class="wallet__title w-max-[314px] text-dark-navy text-center text-[32px] font-bold leading-8 mt-14 md:w-[471px] md:text-5xl md:leading-[48px] lg:w-[471px] lg:text-5xl lg:text-start lg:mt-0 dark:text-white target duration-[400ms]"
@@ -25,13 +25,13 @@
     <!-- Modal -->
     <Transition name="modal" class="relative z-[1111]">
         <div class="wallet__main-modal" v-if="isModalOpened">
-            <WalletSection @closeModal="closeModal" />
+            <WalletComponent @closeModal="closeModal" />
         </div>
     </Transition>
 </template>
 <script>
 import TheButton from '../../../MaterialUI/TheButton.vue';
-import WalletSection from '../components/WalletComponent.vue'
+import WalletComponent from '../components/WalletComponent.vue'
 export default {
     data() {
         return {
@@ -50,7 +50,7 @@ export default {
     },
     components: {
         TheButton,
-        WalletSection
+        WalletComponent
     }
 }
 </script>

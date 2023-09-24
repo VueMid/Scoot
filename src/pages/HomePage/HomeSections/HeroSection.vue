@@ -1,7 +1,7 @@
 <template>
-    <section class="hero bg-fixed lg:bg-local relative">
+    <section class="hero bg-fixed lg:bg-local relative pt-[115px] md:pt-[135px] xl:pt-[153px]">
         <div
-            class="container hero__container flex flex-col justify-center items-center pt-[115px] pb-[180px] md:pt-[135px] md:pb-[217px] md:flex md:flex-col md:justify-center md:items-center xl:flex xl:flex-col xl:justify-center xl:items-start xl:pt-[153px] xl:pb-[152px] xl:px-0">
+            class="container hero__container flex flex-col justify-center items-center pb-[180px] md:pb-[217px] md:flex md:flex-col md:justify-center md:items-center xl:flex xl:flex-col xl:justify-center xl:items-start xl:pb-[152px]xl:px-0">
             <h2
                 class="hero__title w-max-[311px] text-center text-white text-[42px] font-bold leading-[46px] md:w-[573px] md:text-[56px] md:leading-[56px] lg:text-center xl:w-[515px] xl:text-start">
                 Scooter sharing made simple

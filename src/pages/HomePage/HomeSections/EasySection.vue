@@ -1,8 +1,8 @@
 <template>
-    <section class="easy">
+    <section class="easy pt-[120px] md:pt-[145px] lg:pt-[200px]">
         <div
-            class="container easy__container flex flex-col justify-center items-center pt-[120px] md:pt-[145px] lg:flex lg:flex-row-reverse lg:justify-between lg:items-center lg:pt-[200px]">
-            <img class="easy__image rounded-[50%] w-max-[311px] md:w-[445px] target duration-[500ms]"
+            class="container easy__container flex flex-col justify-center items-center  lg:flex lg:flex-row-reverse lg:justify-between lg:items-center">
+            <img class="easy__image rounded-[50%] w-max-[311px] md:w-[445px] target duration-[600ms]"
                 v-motion-slide-visible-once-bottom src="@/assets/images/guy__holding-phone.png" alt="guy__holding-phone">
             <div class="easy__box flex flex-col justify-center items-center lg:flex-col lg:justify-center lg:items-start">
                 <h3 class="easy__title w-max-[314px] text-dark-navy text-center text-[32px] font-bold leading-8 mt-14 md:w-[471px] md:text-5xl md:leading-[48px] lg:w-[471px] lg:text-5xl lg:text-start lg:mt-0 dark:text-white target duration-[400ms]"
