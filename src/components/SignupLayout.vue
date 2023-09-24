@@ -6,7 +6,7 @@
                 v-motion-slide-visible-once-left>
                 Sign up and Scoot off today
             </h3>
-            <div class="signup__box-icons flex flex-row justify-center items-center gap-3 target duration-[700ms]"
+            <div class="signup__box-icons flex flex-row justify-center items-center gap-3 target duration-[900ms]"
                 v-motion-fade-visible-once>
                 <a class="signup__icon cursor-pointer" target="_blank" href="https://www.apple.com/app-store/">
                     <img class="signup__images w-max-[114px] lg:w-[159px]" src="@/assets/icons/appstore.svg" alt="appstore">

@@ -1,5 +1,5 @@
 <template>
-    <section class="map">
+    <section class="map target duration-[800ms]" v-motion-pop-visible-once>
         <div class="container map__container">
 
         </div>
