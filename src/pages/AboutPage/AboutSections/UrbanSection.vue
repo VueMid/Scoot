@@ -46,7 +46,7 @@
         width: 100%;
         max-width: 355px;
         height: 151px;
-        top: 0;
+        top: 30%;
         left: 0;
         background-image: url('@/assets/icons/urban__yellow-cursor.svg');
         background-repeat: no-repeat;
@@ -118,7 +118,7 @@
             width: 100%;
             max-width: 267px;
             height: 151px;
-            top: 0;
+            top: 15%;
             left: 0;
             background-image: url('@/assets/icons/yellow__third-cursor-path.svg');
             background-repeat: no-repeat;
