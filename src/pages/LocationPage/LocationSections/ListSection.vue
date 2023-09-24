@@ -6,13 +6,13 @@
                 v-motion-slide-visible-once-bottom>
                 Your City Not Listed?
             </h2>
-            <p class="list__text text-center max-w-[311px] text-[15px] leading-[25px] dark:text-white/70 text-dim-grey md:max-w-[573px] xl:text-start xl:max-w-[445px] target duration-[700ms]"
+            <p class="list__text text-center max-w-[311px] text-[15px] leading-[25px] dark:text-white/70 text-dim-grey md:max-w-[573px] xl:text-start xl:max-w-[445px] target duration-[600ms]"
                 v-motion-slide-visible-once-bottom>
                 If you’d like to see Scoot in your hometown, be sure to let us know. We track requests and plan launches
                 based on demand. Feel free to message us by clicking the link or messaging us on social.
             </p>
             <a href="mailto:turabovumid587@gmail.com"
-                class="bg-darker-yellow duration-200 text-center w-[180px] leading-[46px] h-[53px] border-[3px] border-darker-yellow text-white font-bold text-[15px] active:bg-inherit active:text-darker-yellow active:duration-200 target duration-[900ms]"
+                class="bg-darker-yellow duration-200 text-center w-[180px] leading-[46px] h-[53px] border-[3px] border-darker-yellow text-white font-bold text-[15px] active:bg-inherit active:text-darker-yellow active:duration-200 target duration-[800ms]"
                 v-motion-slide-visible-once-bottom>
                 Message Us
             </a>
