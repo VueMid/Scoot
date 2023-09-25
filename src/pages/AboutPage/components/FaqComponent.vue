@@ -1,5 +1,5 @@
 <template>
-    <div class="faq__main-message flex flex-col justify-center items-start gap-4 md:gap-6 xl:gap-4 target duration-[800ms]"
+    <div class="faq__main-message flex flex-col justify-center items-start gap-4 md:gap-6 xl:gap-4 target duration-500"
         v-motion-slide-visible-once-right>
         <article v-for="(item, index) in accordionArray" :key="item"
             class="faq__message dark:bg-tailwind-dark-second xl:dark:hover:bg-dark-navy bg-snow xl:hover:bg-light-yellow px-[32px] pt-[32px] pb-[6px] md:flex md:flex-col md:justify-center md:items-start w-[280px] sm:w-[311px] md:w-[689px] xl:w-[730px]">

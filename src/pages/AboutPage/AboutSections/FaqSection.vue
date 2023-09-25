@@ -1,14 +1,14 @@
 <template>
     <section class="faq mt-[145px] md:mt-[120px] xl:mt-[120px] overflow-hidden">
         <div class="container faq__container flex flex-col justify-center items-center gap-12 md:gap-16">
-            <h2 class="faq__title text-center dark:text-white text-dark-navy text-[32px] font-bold leading-8 tracking-tighter-[-1.429px] md:text-[48px] md:leading-[48px] md:tracking-tighter-[-2.143px] target duration-[600ms]"
+            <h2 class="faq__title text-center dark:text-white text-dark-navy text-[32px] font-bold leading-8 tracking-tighter-[-1.429px] md:text-[48px] md:leading-[48px] md:tracking-tighter-[-2.143px] target duration-500"
                 v-motion-slide-visible-once-bottom>
                 FAQs
             </h2>
             <!-- Bottom boxes -->
             <div
                 class="faq__bottom-box flex flex-col justify-center items-center gap-8 xl:w-full xl:flex xl:flex-row xl:justify-between xl:items-start xl:gap-0">
-                <h5 class="faq__mini-title dark:text-white text-dark-navy text-2xl font-bold leading-7 tracking-tighter-[-1.071px] md:text-[40px] md:leading-[48px] md:tracking-tighter-[-1.786px] target duration-[500ms]"
+                <h5 class="faq__mini-title dark:text-white text-dark-navy text-2xl font-bold leading-7 tracking-tighter-[-1.071px] md:text-[40px] md:leading-[48px] md:tracking-tighter-[-1.786px] target duration-200"
                     v-motion-slide-visible-once-left>
                     How it works
                 </h5>

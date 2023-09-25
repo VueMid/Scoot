@@ -2,7 +2,7 @@
     <section class="scooter pt-[190px] md:pt-[192px] xl:pt-[160px]">
         <div
             class="container scooter__container flex flex-col justify-center items-center gap-12  md:flex md:flex-col md:justify-center md:items-center md:gap-10 xl:flex xl:flex-row xl:justify-between xl:items-start xl:gap-0px">
-            <div class="scooter__boxes flex flex-col justify-center items-center gap-6 md:flex md:flex-row md:justify-center md:items-start md:gap-20 x:flex xl:flex-col xl:justify-center xl:gap-10 target duration-[600ms]"
+            <div class="scooter__boxes flex flex-col justify-center items-center gap-6 md:flex md:flex-row md:justify-center md:items-start md:gap-20 x:flex xl:flex-col xl:justify-center xl:gap-10 target duration-200"
                 v-motion-slide-visible-once-left>
                 <img class="scooter__images w-max-[56px] md:w-[96px]" src="@/assets/icons/phone.svg" alt="mobile">
                 <div
@@ -18,7 +18,7 @@
                     </p>
                 </div>
             </div>
-            <div class="scooter__boxes flex flex-col justify-center items-center gap-6 md:flex md:flex-row md:justify-center md:items-start md:gap-20 x:flex xl:flex-col xl:justify-center xl:gap-10 target duration-[800ms]"
+            <div class="scooter__boxes flex flex-col justify-center items-center gap-6 md:flex md:flex-row md:justify-center md:items-start md:gap-20 x:flex xl:flex-col xl:justify-center xl:gap-10 target duration-300"
                 v-motion-slide-visible-once-left>
                 <img class="scooter__images w-max-[56px] md:w-[96px]" src="@/assets/icons/scoot.svg" alt="scoot">
                 <div
@@ -34,7 +34,7 @@
                     </p>
                 </div>
             </div>
-            <div class="scooter__boxes flex flex-col justify-center items-center gap-6 md:flex md:flex-row md:justify-center md:items-start md:gap-20 x:flex xl:flex-col xl:justify-center xl:gap-10 target duration-[1000ms]"
+            <div class="scooter__boxes flex flex-col justify-center items-center gap-6 md:flex md:flex-row md:justify-center md:items-start md:gap-20 x:flex xl:flex-col xl:justify-center xl:gap-10 target duration-500"
                 v-motion-slide-visible-once-left>
                 <img class="scooter__images w-max-[56px] md:w-[96px]" src="@/assets/icons/scooter.svg" alt="scooter">
                 <div
