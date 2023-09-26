@@ -14,7 +14,7 @@
                     we offset the minimal carbon footprint for each ride.
                 </p>
             </div>
-            <img class="urban__image rounded-[50%] w-max-[311px] md:w-[445px] target duration-500"
+            <img class="urban__image rounded-[50%] z-[2] w-max-[311px] md:w-[445px] target duration-[400ms]"
                 src="@/assets/images/urban.png" alt="girl" v-motion-slide-visible-once-bottom>
         </div>
     </section>
@@ -24,7 +24,7 @@
     position: relative;
 
     &::after {
-        z-index: -1;
+        z-index: 1;
         transform: rotate(180deg);
         position: absolute;
         content: '';
@@ -39,7 +39,7 @@
     }
 
     &::before {
-        z-index: 2;
+        z-index: 3;
         position: absolute;
         content: '';
         display: inline-block;
@@ -62,7 +62,7 @@
         position: relative;
 
         &::after {
-            z-index: -1;
+            z-index: 1;
             transform: rotate(180deg);
             position: absolute;
             content: '';
@@ -77,7 +77,7 @@
         }
 
         &::before {
-            z-index: 2;
+            z-index: 3;
             position: absolute;
             content: '';
             display: inline-block;

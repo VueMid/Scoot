@@ -14,7 +14,7 @@
                     smart access to scooters at your fingertips.
                 </p>
             </div>
-            <img class="mobility__image rounded-[50%] w-max-[311px] md:w-[445px] sm:target md:target xl:target:none duration-500"
+            <img class="mobility__image rounded-[50%] z-[2] w-max-[311px] md:w-[445px] sm:target md:target xl:target:none duration-500"
                 src="@/assets/images/girl__second.png" alt="girl" v-motion-slide-visible-once-bottom>
         </div>
     </section>
@@ -24,7 +24,7 @@
     position: relative;
 
     &::after {
-        z-index: -1;
+        z-index: 1;
         position: absolute;
         content: '';
         display: inline-block;
@@ -38,7 +38,7 @@
     }
 
     &::before {
-        z-index: 2;
+        z-index: 3;
         position: absolute;
         content: '';
         display: inline-block;
@@ -61,7 +61,7 @@
         position: relative;
 
         &::after {
-            z-index: -1;
+            z-index: 1;
             position: absolute;
             content: '';
             display: inline-block;
@@ -75,7 +75,7 @@
         }
 
         &::before {
-            z-index: 2;
+            z-index: 3;
             position: absolute;
             content: '';
             display: inline-block;

@@ -2,7 +2,7 @@
     <section class="wallet pb-[120px] md:pb-[104px] xl:pb-[200px] pt-[120px] md:pt-[145px] lg:pt-[200px]">
         <div
             class="container wallet__container flex flex-col justify-center items-center lg:flex lg:flex-row-reverse lg:justify-between lg:items-center">
-            <img class="wallet__image rounded-[50%] w-max-[311px] md:w-[445px] target duration-500"
+            <img class="wallet__image rounded-[50%] z-[2] w-max-[311px] md:w-[445px] target duration-[400ms]"
                 v-motion-slide-visible-once-bottom src="@/assets/images/wallet.png" alt="guy__holding-phone">
             <div class="wallet__box flex flex-col justify-center items-center lg:flex-col lg:justify-center lg:items-start">
                 <h3 class="wallet__title w-max-[314px] text-dark-navy text-center text-[32px] font-bold leading-8 mt-14 md:w-[471px] md:text-5xl md:leading-[48px] lg:w-[471px] lg:text-5xl lg:text-start lg:mt-0 dark:text-white target duration-200"
@@ -15,7 +15,7 @@
                     your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a
                     month.
                 </p>
-                <TheButton class="wallet__button mt-8 md:mt-10 target duration-500" v-motion-slide-visible-once-left
+                <TheButton class="wallet__button mt-8 md:mt-10 target duration-[400ms]" v-motion-slide-visible-once-left
                     data-modal-target="staticModal" data-modal-toggle="staticModal" type="button" @click="openModal">
                     Learn More
                 </TheButton>
@@ -69,21 +69,21 @@ export default {
     position: relative;
 
     &::after {
+        z-index: 1;
         pointer-events: none;
-        margin-top: 150px;
         content: '';
         position: absolute;
         display: inline-block;
         width: 101px;
         height: 445px;
-        top: 0;
+        top: 24%;
         right: 0px;
         background-image: url('@/assets/icons/grey__circle-mask.svg');
         background-repeat: no-repeat;
     }
 
     &::before {
-        z-index: 2;
+        z-index: 3;
         pointer-events: none;
         content: '';
         position: absolute;
@@ -106,6 +106,7 @@ export default {
         position: relative;
 
         &::after {
+            z-index: 1;
             pointer-events: none;
             margin-top: 120px;
             content: '';
@@ -113,14 +114,14 @@ export default {
             display: inline-block;
             width: 101px;
             height: 445px;
-            top: 0;
+            top: 2%;
             right: 0px;
             background-image: url('@/assets/icons/grey__circle-mask.svg');
             background-repeat: no-repeat;
         }
 
         &::before {
-            z-index: 2;
+            z-index: 3;
             pointer-events: none;
             content: '';
             position: absolute;

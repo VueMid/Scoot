@@ -2,7 +2,7 @@
     <section class="easy pt-[120px] md:pt-[145px] lg:pt-[200px]">
         <div
             class="container easy__container flex flex-col justify-center items-center  lg:flex lg:flex-row-reverse lg:justify-between lg:items-center">
-            <img class="easy__image rounded-[50%] w-max-[311px] md:w-[445px] target duration-500"
+            <img class="easy__image rounded-[50%] z-[1] w-max-[311px] md:w-[445px] target duration-[400ms]"
                 v-motion-slide-visible-once-bottom src="@/assets/images/guy__holding-phone.png" alt="guy__holding-phone">
             <div class="easy__box flex flex-col justify-center items-center lg:flex-col lg:justify-center lg:items-start">
                 <h3 class="easy__title w-max-[314px] text-dark-navy text-center text-[32px] font-bold leading-8 mt-14 md:w-[471px] md:text-5xl md:leading-[48px] lg:w-[471px] lg:text-5xl lg:text-start lg:mt-0 dark:text-white target duration-200"
@@ -15,7 +15,7 @@
                     long you've been using the scooter, your traveling distance, and many more things all in an easy to use
                     app.
                 </p>
-                <TheButton class="easy__button mt-8 md:mt-10 target duration-500" v-motion-slide-visible-once-left
+                <TheButton class="easy__button mt-8 md:mt-10 target duration-[400ms]" v-motion-slide-visible-once-left
                     data-modal-target="staticModal" data-modal-toggle="staticModal" type="button" @click="openModal">
                     Learn More
                 </TheButton>
@@ -82,7 +82,7 @@ export default {
     }
 
     &::before {
-        z-index: -1;
+        z-index: 1;
         pointer-events: none;
         position: absolute;
         content: '';
@@ -105,6 +105,7 @@ export default {
         position: relative;
 
         &::after {
+            z-index: 1;
             pointer-events: none;
             position: absolute;
             content: '';
@@ -118,7 +119,7 @@ export default {
         }
 
         &::before {
-            z-index: -1;
+            z-index: 1;
             pointer-events: none;
             position: absolute;
             content: '';

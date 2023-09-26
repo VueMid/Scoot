@@ -2,7 +2,7 @@
     <section class="city overflow-hidden pt-[120px] md:pt-[128px] lg:pt-[160px]">
         <div
             class="container city__container flex flex-col justify-center items-center lg:flex lg:flex-row lg:justify-between lg:items-center">
-            <img class="city__image rounded-[50%] w-max-[311px] md:w-[445px] target duration-500"
+            <img class="city__image rounded-[50%] z-[2] w-max-[311px] md:w-[445px] target duration-[400ms]"
                 v-motion-slide-visible-once-bottom src="@/assets/images/city.png" alt="guy__holding-phone">
             <div class="city__box flex flex-col justify-center items-center lg:flex-col lg:justify-center lg:items-start">
                 <h3 class="city__title w-max-[314px] text-dark-navy text-center text-[32px] font-bold leading-8 mt-14 md:w-[471px] md:text-5xl md:leading-[48px] lg:w-[471px] lg:text-5xl lg:text-start lg:mt-0 dark:text-white target duration-200"
@@ -15,7 +15,7 @@
                     want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming
                     year.
                 </p>
-                <TheButton class="city__button mt-8 md:mt-10 target duration-500" v-motion-slide-visible-once-right
+                <TheButton class="city__button mt-8 md:mt-10 target duration-[400ms]" v-motion-slide-visible-once-right
                     data-modal-target="staticModal" data-modal-toggle="staticModal" type="button" @click="openModal">
                     Learn More
                 </TheButton>
@@ -69,7 +69,7 @@ export default {
     position: relative;
 
     &::after {
-        z-index: -1;
+        z-index: 1;
         transform: rotate(180deg);
         pointer-events: none;
         content: '';
@@ -85,7 +85,7 @@ export default {
 
     &::before {
         transform: rotate(180deg);
-        z-index: 2;
+        z-index: 3;
         pointer-events: none;
         content: '';
         position: absolute;
@@ -108,7 +108,7 @@ export default {
         position: relative;
 
         &::after {
-            z-index: -1;
+            z-index: 1;
             transform: rotate(180deg);
             pointer-events: none;
             content: '';
@@ -116,7 +116,7 @@ export default {
             display: inline-block;
             width: 101px;
             height: 445px;
-            top: 14%;
+            top: 13%;
             left: 0px;
             background-image: url('@/assets/icons/grey__circle-mask.svg');
             background-repeat: no-repeat;
@@ -124,7 +124,7 @@ export default {
 
         &::before {
             transform: rotate(180deg);
-            z-index: 2;
+            z-index: 3;
             pointer-events: none;
             content: '';
             position: absolute;
