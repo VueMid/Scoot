@@ -1,6 +1,6 @@
 <template>
     <div
-        class="fixed top-0 left-0 right-0 w-full p-4 overflow-x-hidden overflow-y-auto h-full max-h-full bg-black/50 flex justify-center items-center lg:px-[0px]">
+        class="fixed top-0 left-0 right-0 w-full p-4 h-full max-h-full bg-black/50 flex justify-center items-center lg:px-[0px]">
         <div
             class="w-full max-w-sm p-4 bg-white border border-gray-200 shadow sm:p-6 md:p-8 dark:bg-tailwind-dark dark:border-gray-700 z-[1111] relative">
             <form class="space-y-6" @submit.prevent="checkForm">
