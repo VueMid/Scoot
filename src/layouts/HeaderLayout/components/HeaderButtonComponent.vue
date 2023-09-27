@@ -1,9 +1,9 @@
 <template>
     <div
-        class="fixed top-0 left-0 right-0 w-full p-4 h-full max-h-full bg-black/50 flex justify-center items-center lg:px-[0px]">
+        class="fixed top-0 left-0 right-0 w-full p-4 overflow-x-hidden overflow-y-auto h-full max-h-full bg-black/50 flex justify-center items-center lg:px-[0px]">
         <div
             class="w-full max-w-sm p-4 bg-white border border-gray-200 shadow sm:p-6 md:p-8 dark:bg-tailwind-dark dark:border-gray-700 z-[1111] relative">
-            <form class="space-y-6" @submit.prevent="checkForm">
+            <form class="space-y-6" @submit.prevent="sendInformation" action="https://echo.htmlacademy.ru" method="get">
                 <h5 class="text-xl font-medium text-gray-900 dark:text-white title">Welcome to Scoot</h5>
                 <div class="form-control" :class="error.nameError ? 'invalid' : ''">
                     <button type="button" @click="$emit('closeModal')"
@@ -15,10 +15,10 @@
                         </svg>
                         <span class="sr-only">Close modal</span>
                     </button>
-                    <label for="text" class="block text mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                    <label for="username" class="block text mb-2 text-sm font-medium text-gray-900 dark:text-white">
                         Your full-name
                     </label>
-                    <input type="text" name="text" id="text" v-model="fullname"
+                    <input type="text" name="text" id="username" v-model="fullname"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                         placeholder="Turabov Umidjon">
                     <small class="text-red-600 font-black">{{ error.nameError }}</small>
@@ -36,7 +36,7 @@
                     <label for="tel" class="block text mb-2 text-sm font-medium text-gray-900 dark:text-white">
                         Your number
                     </label>
-                    <input type="number" name="number" v-model="tel" id="number" inputmode="numeric"
+                    <input type="number" name="number" v-model="tel" id="tel" inputmode="numeric"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                         placeholder="(+998)">
                     <small class="text-red-600 font-black">{{ errorThird.nameErrorThird }}</small>
@@ -101,11 +101,23 @@ export default {
             }
             return isValidThird;
         },
-        checkForm() {
-            if (this.validatedForm());
-            if (this.validatedFormSecond());
-            if (this.validatedFormThird());
+        sendInformation() {
+            if (this.validatedForm() && this.validatedFormSecond() && this.validatedFormThird()) {
+                this.sendData(this.fullname, this.email, this.tel)
+            }
         },
+        async sendData(name, email, tel) {
+            const token = `6674983725:AAGnJRpQtV__e2I7bu9iHtT89ucHFW40Zvo`
+            const bot_id = `-1001837026407`
+            const info = `User: %0A <strong>Username:</strong> ${name} %0A <strong>Email Address:</strong> ${email} %0A  <strong>Phone Number:</strong> ${tel}`;
+            const response = await fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${bot_id}&text=${info}&parse_mode=html`);
+            const data = await response.json()
+            console.log(data);
+            this.fullname = '';
+            this.email = '';
+            this.tel = '';
+            this.$emit('closeModal');
+        }
     },
     watch: {
         tel(val) {
