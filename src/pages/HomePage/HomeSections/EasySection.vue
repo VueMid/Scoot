@@ -69,6 +69,7 @@ export default {
     position: relative;
 
     &::after {
+        z-index: 1;
         pointer-events: none;
         position: absolute;
         content: '';

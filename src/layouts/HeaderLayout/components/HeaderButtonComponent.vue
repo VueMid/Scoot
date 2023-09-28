@@ -18,7 +18,7 @@
                     <label for="username" class="block text mb-2 text-sm font-medium text-gray-900 dark:text-white">
                         Your full-name
                     </label>
-                    <input type="text" name="text" id="username" v-model="fullname"
+                    <input type="text" name="text" id="username" v-model="fullname" autocomplete="off"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                         placeholder="Turabov Umidjon">
                     <small class="text-red-600 font-black">{{ error.nameError }}</small>
@@ -27,7 +27,7 @@
                     <label for="email" class="block text mb-2 text-sm font-medium text-gray-900 dark:text-white">
                         Your email
                     </label>
-                    <input type="email" name="email" id="email" v-model="email"
+                    <input type="email" name="email" id="email" v-model="email" autocomplete="off"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                         placeholder="scoot@company.com">
                     <small class="text-red-600 font-black">{{ errorSecond.nameErrorSecond }}</small>
@@ -36,7 +36,7 @@
                     <label for="tel" class="block text mb-2 text-sm font-medium text-gray-900 dark:text-white">
                         Your number
                     </label>
-                    <input type="number" name="number" v-model="tel" id="tel" inputmode="numeric"
+                    <input type="number" name="number" v-model="tel" id="tel" inputmode="numeric" autocomplete="off"
                         class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                         placeholder="(+998)">
                     <small class="text-red-600 font-black">{{ errorThird.nameErrorThird }}</small>
