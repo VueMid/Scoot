@@ -25,7 +25,7 @@
     <!-- Modal -->
     <Transition name="modal" class="relative z-[1111]">
         <div class="city__main-modal" v-if="isModalOpened">
-            <WalletComponent @closeModal="closeModal" />
+            <CityComponent @closeModal="closeModal" />
         </div>
     </Transition>
 </template>
@@ -160,7 +160,7 @@ export default {
 
         &::before {
             transform: rotate(180deg);
-            z-index: 2;
+            z-index: 3;
             pointer-events: none;
             content: '';
             position: absolute;
