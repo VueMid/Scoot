@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main class="overflow-x-hidden">
     <HeaderLayout />
     <Transition name="fade">
       <RouterView />
