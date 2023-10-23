@@ -89,11 +89,10 @@
             Your number
           </label>
           <input
-            type="number"
+            type="tel"
             name="number"
-            v-model="tel"
+            v-model.number="tel"
             id="tel"
-            inputmode="numeric"
             autocomplete="off"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
             placeholder="(+998)"
@@ -208,19 +207,9 @@ export default {
 .form-control.invalid input {
   border-color: red;
 }
-
-input[type="number"]::-webkit-inner-spin-button {
-  display: none;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 .title {
   font-family: "Space Mono";
 }
-
 .text {
   font-family: "Lexend Deca";
 }
