@@ -89,7 +89,7 @@
             Your number
           </label>
           <input
-            type="tel"
+            type="number"
             name="number"
             v-model.number="tel"
             id="tel"
@@ -186,7 +186,7 @@ export default {
       );
       const data = await response.json();
       console.log(data);
-      console.log(this.toast.success("Your information has been sent"));
+      this.toast.success("Your information has been sent");
       this.fullname = "";
       this.email = "";
       this.tel = "";
@@ -204,6 +204,12 @@ export default {
 };
 </script>
 <style>
+input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 .form-control.invalid input {
   border-color: red;
 }
