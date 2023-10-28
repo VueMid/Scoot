@@ -1,60 +1,68 @@
 <template>
-    <div
-        class="header__button flex flex-row justify-center items-center gap-8 md:flex md:flex-row md:justify-center md:items-center md:gap-8">
-        <TheDarkMode class="hidden md:block" />
-        <TheButton class="hidden md:block" @action="openModals">
-            Get Scootin
-        </TheButton>
-        <button class="block md:hidden" v-if="!isOpen" @click="$emit('openMenu')">
-            <img class="w-[24px] h-[24px]" src="@/assets/icons/open__menu.svg" alt="open__menu">
-        </button>
-        <button class="block md:hidden" v-else @click="$emit('closeMenu')">
-            <img class=" w-[24px] h-[24px]" src="@/assets/icons/close__menu.svg" alt="close__menu">
-        </button>
+  <div
+    class="header__button flex flex-row justify-center items-center gap-8 md:flex md:flex-row md:justify-center md:items-center md:gap-8"
+  >
+    <TheDarkMode class="hidden md:block" />
+    <TheButton class="hidden md:block" @action="openModals">
+      Get Scootin
+    </TheButton>
+    <button class="block md:hidden" v-if="!isOpen" @click="$emit('openMenu')">
+      <img
+        class="w-[24px] h-[24px]"
+        src="@/assets/icons/open__menu.svg"
+        alt="open__menu"
+      />
+    </button>
+    <button class="block md:hidden" v-else @click="$emit('closeMenu')">
+      <img
+        class="w-[24px] h-[24px]"
+        src="@/assets/icons/close__menu.svg"
+        alt="close__menu"
+      />
+    </button>
+  </div>
+  <Transition name="modal" class="relative z-[1111]">
+    <div class="header__main-modal hidden md:block" v-if="isModalOpened">
+      <HeaderButtonComponent @closeModal="closeModal" />
     </div>
-    <Transition name="modal" class="relative z-[1111]">
-        <div class="header__main-modal hidden md:block" v-if="isModalOpened">
-            <HeaderButtonComponent @closeModal="closeModal" />
-        </div>
-    </Transition>
+  </Transition>
 </template>
 <script>
-import TheButton from '../../../MaterialUI/TheButton.vue';
-import TheDarkMode from '../../../MaterialUI/TheDarkMode.vue';
-import HeaderButtonComponent from './HeaderButtonComponent.vue';
+import TheButton from "../../../MaterialUI/TheButton.vue";
+import TheDarkMode from "../../../MaterialUI/TheDarkMode.vue";
+import HeaderButtonComponent from "./HeaderButtonComponent.vue";
 export default {
-    data() {
-        return {
-            isModalOpened: false,
-            isOpen: false,
-        }
+  data() {
+    return {
+      isModalOpened: false,
+    };
+  },
+  methods: {
+    openModals() {
+      this.isModalOpened = true;
+      document.body.style.overflow = "hidden";
     },
-    methods: {
-        openModals() {
-            this.isModalOpened = true;
-            document.body.style.overflow = 'hidden';
-        },
-        closeModal() {
-            this.isModalOpened = false;
-            document.body.style.overflow = 'auto';
-        }
+    closeModal() {
+      this.isModalOpened = false;
+      document.body.style.overflow = "auto";
     },
-    props: {
-        isOpen: {
-            type: Boolean,
-        }
+  },
+  props: {
+    isOpen: {
+      type: Boolean,
     },
-    components: { TheButton, TheDarkMode, HeaderButtonComponent }
-}
+  },
+  components: { TheButton, TheDarkMode, HeaderButtonComponent },
+};
 </script>
 <style>
 .modal-enter-active,
 .modal-leave-active {
-    transition: opacity 0.6s ease;
+  transition: opacity 0.6s ease;
 }
 
 .modal-enter-from,
 .modal-leave-to {
-    opacity: 0;
+  opacity: 0;
 }
 </style>
