@@ -89,13 +89,13 @@
             Your number
           </label>
           <input
-            type="number"
+            type="tel"
             name="number"
             v-model.number="tel"
             id="tel"
             autocomplete="off"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-            placeholder="(+998)"
+            maxlength="13"
           />
           <small class="text-red-600 font-black">{{
             errorThird.nameErrorThird
@@ -119,7 +119,7 @@ export default {
       toast: useToast(),
       fullname: "",
       email: "",
-      tel: "",
+      tel: "+998",
       error: {
         nameError: null,
       },
@@ -197,19 +197,13 @@ export default {
     tel(val) {
       if (val) {
         const str = String(val);
-        this.tel = str.replace(/\D/g, "");
+        this.tel = "+" + str.replace(/\D/g, "");
       }
     },
   },
 };
 </script>
 <style>
-input[type="number"]::-webkit-inner-spin-button {
-  display: none;
-}
-input[type="number"] {
-  -moz-appearance: textfield;
-}
 .form-control.invalid input {
   border-color: red;
 }
