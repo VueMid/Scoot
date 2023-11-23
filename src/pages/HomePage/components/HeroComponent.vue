@@ -156,7 +156,7 @@ export default {
     },
     validatedFormThird() {
       let isValidThird = true;
-      if (this.tel.length === 0) {
+      if (this.tel.length <= 4) {
         isValidThird = false;
         this.errorThird.nameErrorThird = "*Enter your number here";
       } else if (this.tel.length > 13) {
