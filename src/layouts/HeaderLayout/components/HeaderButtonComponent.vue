@@ -159,7 +159,7 @@ export default {
       if (this.tel.length <= 4) {
         isValidThird = false;
         this.errorThird.nameErrorThird = "*Enter your number here";
-      } else if (this.tel.length > 13) {
+      } else if (this.tel.length < 13) {
         isValidThird = false;
         this.errorThird.nameErrorThird = "*At least 13 characters!";
       } else {
