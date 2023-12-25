@@ -48,7 +48,7 @@
             type="text"
             name="text"
             id="username"
-            v-model="fullname"
+            v-model.trim="fullname"
             autocomplete="off"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
             placeholder="Turabov Umidjon"
@@ -69,7 +69,7 @@
             type="email"
             name="email"
             id="email"
-            v-model="email"
+            v-model.trim="email"
             autocomplete="off"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
             placeholder="scoot@company.com"
@@ -180,7 +180,7 @@ export default {
     async sendData(name, email, tel) {
       const token = `6674983725:AAGnJRpQtV__e2I7bu9iHtT89ucHFW40Zvo`;
       const bot_id = `-1001837026407`;
-      const info = `User: %0A<strong>Username:</strong> ${name} %0A<strong>Email Address:</strong> ${email} %0A<strong>Phone Number:</strong> ${tel}`;
+      const info = `User: %0A<strong>Full-name:</strong> ${name} %0A<strong>Email Address:</strong> ${email} %0A<strong>Phone Number:</strong> ${tel}`;
       const response = await fetch(
         `https://api.telegram.org/bot${token}/sendMessage?chat_id=${bot_id}&text=${info}&parse_mode=html`
       );
