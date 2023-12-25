@@ -48,8 +48,8 @@
             type="text"
             name="text"
             id="username"
-            v-model="fullname"
             autocomplete="off"
+            v-model.trim="fullname"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
             placeholder="Turabov Umidjon"
           />
@@ -69,8 +69,8 @@
             type="email"
             name="email"
             id="email"
-            v-model="email"
             autocomplete="off"
+            v-model.trim="email"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
             placeholder="scoot@company.com"
           />
@@ -91,9 +91,9 @@
           <input
             type="tel"
             name="number"
+            autocomplete="off"
             v-model.number="tel"
             id="tel"
-            autocomplete="off"
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
             maxlength="13"
           />
@@ -159,7 +159,7 @@ export default {
       if (this.tel.length <= 4) {
         isValidThird = false;
         this.errorThird.nameErrorThird = "*Enter your number here";
-      } else if (this.tel.length > 13) {
+      } else if (this.tel.length < 13) {
         isValidThird = false;
         this.errorThird.nameErrorThird = "*At least 13 characters!";
       } else {
@@ -180,7 +180,7 @@ export default {
     async sendData(name, email, tel) {
       const token = `6674983725:AAGnJRpQtV__e2I7bu9iHtT89ucHFW40Zvo`;
       const bot_id = `-1001837026407`;
-      const info = `User: %0A<strong>Username:</strong> ${name} %0A<strong>Email Address:</strong> ${email} %0A<strong>Phone Number:</strong> ${tel}`;
+      const info = `User: %0A<strong>Full-name:</strong> ${name} %0A<strong>Email Address:</strong> ${email} %0A<strong>Phone Number:</strong> ${tel}`;
       const response = await fetch(
         `https://api.telegram.org/bot${token}/sendMessage?chat_id=${bot_id}&text=${info}&parse_mode=html`
       );
